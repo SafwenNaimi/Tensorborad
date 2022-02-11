@@ -1,9 +1,12 @@
 import matplotlib.pyplot as plt
 import torch
+import torch.nn as nn
+import torch.optim as optim
+import numpy as np
+import torchvision
+from torchvision import datasets, models, transforms
+import time
+import os
+import copy
 import cv2
 
-a = [25,26,27]
-b = [26,27,28]
-
-plt.plot(a,b)
-plt.show()
