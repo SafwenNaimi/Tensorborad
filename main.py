@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from sklearn.utils import shuffle
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -27,4 +28,16 @@ data_transforms = {
         transforms.Normalize(mean, std)
     ])
 }
+
+data_dir = 'hymenoptera_data'
+image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir,x),
+                                        data_transforms[x])
+                  for x in ['train', 'val']}
+
+dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=4,
+shuffle=True, num_workers=0)
+for x in ['train', 'val']}
+
+
+
 
