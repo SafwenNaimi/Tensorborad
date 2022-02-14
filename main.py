@@ -10,6 +10,9 @@ import time
 import os
 import copy
 import cv2
+import tensorflow as tf
+
+print(tf.test.is_gpu_available(cuda_only=False,min_cuda_compute_capability=None))
 
 mean = np.array([0.5, 0.5, 0.5])
 std = np.array([0.25, 0.25, 0.25])
@@ -19,7 +22,7 @@ data_transforms = {
         transforms.RandomResizedCrop(224),
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
-        transforms.Normalize(mean,std)
+        transforms.Normalize(mean, std)
     ]),
     'val': transforms.Compose([
         transforms.Resize(256),
