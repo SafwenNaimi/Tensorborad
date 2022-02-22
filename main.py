@@ -64,7 +64,7 @@ inputs, classes = next(iter(dataloaders['train']))
 # Make a grid from batch
 out = torchvision.utils.make_grid(inputs)
 
-imshow(out, title=[class_names[x] for x in classes])
+#imshow(out, title=[class_names[x] for x in classes])
 
 
 def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
@@ -132,7 +132,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
 
 #### Finetuning the convnet ####
 # Load a pretrained model and reset final fully connected layer.
-
+"""
 model = models.resnet18(pretrained=True)
 num_ftrs = model.fc.in_features
 # Here the size of each output sample is set to 2.
@@ -158,7 +158,7 @@ optimizer = optim.SGD(model.parameters(), lr=0.001)
 step_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
 
 model = train_model(model, criterion, optimizer, step_lr_scheduler, num_epochs=25)
-
+"""
 
 #### ConvNet as fixed feature extractor ####
 # Here, we need to freeze all the network except the final layer.
@@ -183,7 +183,7 @@ optimizer_conv = optim.SGD(model_conv.fc.parameters(), lr=0.001, momentum=0.9)
 exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=7, gamma=0.1)
 
 model_conv = train_model(model_conv, criterion, optimizer_conv,
-                         exp_lr_scheduler, num_epochs=25)
+                         exp_lr_scheduler, num_epochs=100)
 
 
 
