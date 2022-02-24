@@ -145,7 +145,6 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
 
 
 
-from torchvision.models.convnext import convnext_tiny
 """
 model_conv = torchvision.models.convnext import convnext_tiny
 for param in model_conv.parameters():
