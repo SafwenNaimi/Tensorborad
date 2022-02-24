@@ -1,2 +1,2 @@
 # Tensorborad
-Learning Power
+Weights and Biases with ConvNets and ConvNeXt (PyTorch)
