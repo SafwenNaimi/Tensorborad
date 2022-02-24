@@ -1,0 +1,35 @@
+2022-02-24 11:59:43,880 INFO    MainThread:17496 [wandb_setup.py:_flush():75] Loading settings from C:\Users\Safwen\.config\wandb\settings
+2022-02-24 11:59:43,881 INFO    MainThread:17496 [wandb_setup.py:_flush():75] Loading settings from C:\Users\Safwen\Desktop\Tensorborad\wandb\settings
+2022-02-24 11:59:43,881 INFO    MainThread:17496 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-02-24 11:59:43,881 INFO    MainThread:17496 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': 'c:\\Users\\Safwen\\Desktop\\Tensorborad\\main.py'}
+2022-02-24 11:59:43,881 INFO    MainThread:17496 [wandb_init.py:_log_setup():386] Logging user logs to C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_115943-knji52ng\logs\debug.log
+2022-02-24 11:59:43,882 INFO    MainThread:17496 [wandb_init.py:_log_setup():387] Logging internal logs to C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_115943-knji52ng\logs\debug-internal.log
+2022-02-24 11:59:43,882 INFO    MainThread:17496 [wandb_init.py:init():420] calling init triggers
+2022-02-24 11:59:43,882 INFO    MainThread:17496 [wandb_init.py:init():425] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'learning_rate': 1e-05, 'epochs': 100}
+2022-02-24 11:59:43,882 INFO    MainThread:17496 [wandb_init.py:init():471] starting backend
+2022-02-24 11:59:43,882 INFO    MainThread:17496 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn, using: spawn
+2022-02-24 11:59:43,884 INFO    MainThread:17496 [backend.py:ensure_launched():219] starting backend process...
+2022-02-24 11:59:43,997 INFO    MainThread:17496 [backend.py:ensure_launched():224] started backend process with pid: 228
+2022-02-24 11:59:43,998 INFO    MainThread:17496 [wandb_init.py:init():480] backend started and connected
+2022-02-24 11:59:44,000 INFO    MainThread:17496 [wandb_init.py:init():550] updated telemetry
+2022-02-24 11:59:44,071 INFO    MainThread:17496 [wandb_init.py:init():581] communicating current version
+2022-02-24 11:59:46,843 INFO    MainThread:17496 [wandb_init.py:init():586] got version response 
+2022-02-24 11:59:46,843 INFO    MainThread:17496 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-02-24 11:59:47,248 INFO    MainThread:17496 [wandb_init.py:init():624] starting run threads in backend
+2022-02-24 11:59:52,268 INFO    MainThread:17496 [wandb_run.py:_console_start():1827] atexit reg
+2022-02-24 11:59:52,269 INFO    MainThread:17496 [wandb_run.py:_redirect():1701] redirect: SettingsConsole.WRAP
+2022-02-24 11:59:52,269 INFO    MainThread:17496 [wandb_run.py:_redirect():1738] Wrapping output streams.
+2022-02-24 11:59:52,272 INFO    MainThread:17496 [wandb_run.py:_redirect():1762] Redirects installed.
+2022-02-24 11:59:52,273 INFO    MainThread:17496 [wandb_init.py:init():651] run started, returning control to user process
+2022-02-24 11:59:54,667 INFO    MainThread:17496 [wandb_watch.py:watch():43] Watching
+2022-02-24 12:07:25,053 INFO    MainThread:17496 [wandb_run.py:_atexit_cleanup():1797] got exitcode: 255
+2022-02-24 12:07:25,054 INFO    MainThread:17496 [wandb_run.py:_restore():1769] restore
+2022-02-24 12:07:25,122 INFO    MainThread:17496 [wandb_run.py:_wait_for_finish():1929] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 793
+  total_bytes: 793
+}
+

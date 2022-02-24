@@ -1,0 +1,15 @@
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:29: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+True
+['ants', 'bees']
+Epoch 0/9
+----------
+train Loss: 0.6116 Acc: 0.6270
+test Loss: 0.3231 Acc: 0.8824
+Epoch 1/9
+----------
+train Loss: 0.4449 Acc: 0.7910
+test Loss: 0.2237 Acc: 0.9346
+Epoch 2/9
+----------

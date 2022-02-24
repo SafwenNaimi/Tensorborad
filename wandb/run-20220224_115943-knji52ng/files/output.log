@@ -1,0 +1,119 @@
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:28: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+True
+['ants', 'bees']
+Epoch 0/99
+----------
+train Loss: 0.6289 Acc: 0.6230
+test Loss: 0.5387 Acc: 0.7647
+Epoch 1/99
+----------
+train Loss: 0.5280 Acc: 0.7623
+test Loss: 0.4014 Acc: 0.9020
+Epoch 2/99
+----------
+train Loss: 0.3797 Acc: 0.8852
+test Loss: 0.3143 Acc: 0.9216
+Epoch 3/99
+----------
+train Loss: 0.3411 Acc: 0.9016
+test Loss: 0.2634 Acc: 0.9216
+Epoch 4/99
+----------
+train Loss: 0.3180 Acc: 0.8852
+test Loss: 0.2447 Acc: 0.9477
+Epoch 5/99
+----------
+train Loss: 0.2485 Acc: 0.9426
+test Loss: 0.2298 Acc: 0.9346
+Epoch 6/99
+----------
+train Loss: 0.2486 Acc: 0.9303
+test Loss: 0.2172 Acc: 0.9477
+Epoch 7/99
+----------
+train Loss: 0.2166 Acc: 0.9303
+test Loss: 0.2105 Acc: 0.9477
+Epoch 8/99
+----------
+train Loss: 0.2234 Acc: 0.9221
+test Loss: 0.2108 Acc: 0.9477
+Epoch 9/99
+----------
+train Loss: 0.2550 Acc: 0.8893
+test Loss: 0.2098 Acc: 0.9477
+Epoch 10/99
+----------
+train Loss: 0.2078 Acc: 0.9139
+test Loss: 0.2090 Acc: 0.9477
+Epoch 11/99
+----------
+train Loss: 0.2102 Acc: 0.9303
+test Loss: 0.2067 Acc: 0.9477
+Epoch 12/99
+----------
+train Loss: 0.2191 Acc: 0.9180
+test Loss: 0.2053 Acc: 0.9477
+Epoch 13/99
+----------
+train Loss: 0.2243 Acc: 0.9098
+test Loss: 0.2053 Acc: 0.9412
+Epoch 14/99
+----------
+train Loss: 0.1927 Acc: 0.9549
+test Loss: 0.2057 Acc: 0.9477
+Epoch 15/99
+----------
+train Loss: 0.2184 Acc: 0.9221
+test Loss: 0.2048 Acc: 0.9412
+Epoch 16/99
+----------
+train Loss: 0.2339 Acc: 0.9057
+test Loss: 0.2027 Acc: 0.9412
+Epoch 17/99
+----------
+train Loss: 0.2060 Acc: 0.9262
+test Loss: 0.2039 Acc: 0.9412
+Epoch 18/99
+----------
+train Loss: 0.2209 Acc: 0.9139
+test Loss: 0.2046 Acc: 0.9477
+Epoch 19/99
+----------
+train Loss: 0.2203 Acc: 0.9344
+test Loss: 0.2040 Acc: 0.9412
+Epoch 20/99
+----------
+train Loss: 0.2111 Acc: 0.9344
+test Loss: 0.2032 Acc: 0.9477
+Epoch 21/99
+----------
+train Loss: 0.2535 Acc: 0.9016
+test Loss: 0.2038 Acc: 0.9346
+Epoch 22/99
+----------
+train Loss: 0.2092 Acc: 0.9426
+Traceback (most recent call last):
+  File "c:\Users\Safwen\Desktop\Tensorborad\main.py", line 202, in <module>
+    exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=7, gamma=0.1)
+  File "c:\Users\Safwen\Desktop\Tensorborad\main.py", line 102, in train_model
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 178, in __getitem__
+    sample = self.loader(path)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 215, in default_loader
+    return pil_loader(path)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 197, in pil_loader
+    return img.convert('RGB')
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\PIL\Image.py", line 893, in convert
+    self.load()
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\PIL\ImageFile.py", line 265, in load
+    n, err_code = decoder.decode(b)
+KeyboardInterrupt

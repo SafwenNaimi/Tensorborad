@@ -12,11 +12,26 @@ import os
 import copy
 import cv2
 import tensorflow as tf
+import wandb
+wandb.login()
+
+hyperparameter_defaults = dict(
+    batch_size = 8,
+    learning_rate = 0.001,
+    epochs = 10,
+    pretrained = True
+    )
+
+wandb.init(config=hyperparameter_defaults, project="ants VS bees")
+config = wandb.config
+
 
 print(tf.test.is_gpu_available(cuda_only=False,min_cuda_compute_capability=None))
 
 mean = np.array([0.5, 0.5, 0.5])
 std = np.array([0.25, 0.25, 0.25])
+
+label_names={'ants', 'bees'}
 
 data_transforms = {
     'train': transforms.Compose([
@@ -25,7 +40,7 @@ data_transforms = {
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ]),
-    'val': transforms.Compose([
+    'test': transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
@@ -36,13 +51,13 @@ data_transforms = {
 data_dir = 'hymenoptera_data'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
-                  for x in ['train', 'val']}
+                  for x in ['train', 'test']}
 
-dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=4,
+dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=config.batch_size,
                                               shuffle=True, num_workers=0)
-              for x in ['train', 'val']}
+              for x in ['train', 'test']}
 
-dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
+dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'test']}
 class_names = image_datasets['train'].classes
 print(class_names)
 
@@ -67,7 +82,7 @@ out = torchvision.utils.make_grid(inputs)
 #imshow(out, title=[class_names[x] for x in classes])
 
 
-def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
+def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs):
     since = time.time()
     best_model_wts = copy.deepcopy(model.state_dict())
     best_acc = 0.0
@@ -76,7 +91,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
         print(f'Epoch {epoch}/{num_epochs-1}')
         print('-' * 10)
 
-        for phase in ['train', 'val']:
+        for phase in ['train', 'test']:
             if phase == 'train':
                 model.train()
             else:
@@ -114,12 +129,14 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
                 phase, epoch_loss, epoch_acc))
 
             # deep copy the model
-            if phase == 'val' and epoch_acc > best_acc:
+            if phase == 'test' and epoch_acc > best_acc:
                 best_acc = epoch_acc
                 best_model_wts = copy.deepcopy(model.state_dict())
-
+            metrics = {'accuracy': epoch_acc, 'loss': epoch_loss}
+            wandb.log(metrics)
         print()
 
+    
     time_elapsed = time.time() - since
     print('Training complete in {:.0f}m {:.0f}s'.format(
         time_elapsed // 60, time_elapsed % 60))
@@ -163,7 +180,8 @@ model = train_model(model, criterion, optimizer, step_lr_scheduler, num_epochs=2
 #### ConvNet as fixed feature extractor ####
 # Here, we need to freeze all the network except the final layer.
 # We need to set requires_grad == False to freeze the parameters so that the gradients are not computed in backward()
-model_conv = torchvision.models.resnet18(pretrained=True)
+
+model_conv = torchvision.models.resnet18(pretrained=config.pretrained)
 for param in model_conv.parameters():
     param.requires_grad = False
 
@@ -172,6 +190,7 @@ num_ftrs = model_conv.fc.in_features
 model_conv.fc = nn.Linear(num_ftrs, 2)
 
 model_conv = model_conv.to(device)
+wandb.watch(model_conv)
 
 criterion = nn.CrossEntropyLoss()
 
@@ -183,7 +202,7 @@ optimizer_conv = optim.SGD(model_conv.fc.parameters(), lr=0.001, momentum=0.9)
 exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=7, gamma=0.1)
 
 model_conv = train_model(model_conv, criterion, optimizer_conv,
-                         exp_lr_scheduler, num_epochs=100)
+                         exp_lr_scheduler, num_epochs=config.epochs)
 
 
 
