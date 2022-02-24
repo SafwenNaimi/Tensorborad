@@ -1,0 +1,47 @@
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+True
+['ants', 'bees']
+Epoch 0/9
+----------
+train: Loss: 0.7108 Acc: 0.4836
+test: Loss: 0.6926 Acc: 0.5490
+Epoch 1/9
+----------
+train: Loss: 0.6954 Acc: 0.5328
+test: Loss: 0.7122 Acc: 0.4575
+Epoch 2/9
+----------
+train: Loss: 0.6858 Acc: 0.5574
+test: Loss: 0.6895 Acc: 0.5229
+Epoch 3/9
+----------
+train: Loss: 0.6770 Acc: 0.5615
+test: Loss: 0.7096 Acc: 0.4641
+Epoch 4/9
+----------
+train: Loss: 0.7008 Acc: 0.5287
+test: Loss: 0.6850 Acc: 0.5229
+Epoch 5/9
+----------
+train: Loss: 0.6643 Acc: 0.6066
+test: Loss: 0.6637 Acc: 0.6078
+Epoch 6/9
+----------
+train: Loss: 0.6778 Acc: 0.5697
+test: Loss: 0.6666 Acc: 0.5686
+Epoch 7/9
+----------
+train: Loss: 0.6650 Acc: 0.6025
+test: Loss: 0.6697 Acc: 0.5621
+Epoch 8/9
+----------
+train: Loss: 0.6584 Acc: 0.5861
+test: Loss: 0.6571 Acc: 0.6078
+Epoch 9/9
+----------
+train: Loss: 0.6643 Acc: 0.6107
+test: Loss: 0.6511 Acc: 0.5882
+Training complete in 3m 41s
+Best val Acc: 0.607843

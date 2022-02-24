@@ -1,0 +1,231 @@
+2022-02-24 17:13:08,047 INFO    MainThread:18352 [internal.py:wandb_internal():89] W&B internal server running at pid: 18352, started at: 2022-02-24 17:13:08.046376
+2022-02-24 17:13:08,049 INFO    WriterThread:18352 [datastore.py:open_for_write():77] open: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\run-2briblqt.wandb
+2022-02-24 17:13:08,049 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: check_version
+2022-02-24 17:13:08,060 DEBUG   SenderThread:18352 [sender.py:send():235] send: header
+2022-02-24 17:13:08,060 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: check_version
+2022-02-24 17:13:08,474 DEBUG   SenderThread:18352 [sender.py:send():235] send: run
+2022-02-24 17:13:08,891 INFO    SenderThread:18352 [dir_watcher.py:__init__():169] watching files in: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files
+2022-02-24 17:13:08,891 INFO    SenderThread:18352 [sender.py:_start_run_threads():809] run started: 2briblqt with start time 1645719185
+2022-02-24 17:13:08,892 DEBUG   SenderThread:18352 [sender.py:send():235] send: summary
+2022-02-24 17:13:08,892 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 17:13:08,893 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: run_start
+2022-02-24 17:13:09,899 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json
+2022-02-24 17:13:12,346 DEBUG   HandlerThread:18352 [meta.py:__init__():36] meta init
+2022-02-24 17:13:12,346 DEBUG   HandlerThread:18352 [meta.py:__init__():50] meta init done
+2022-02-24 17:13:12,346 DEBUG   HandlerThread:18352 [meta.py:probe():210] probe
+2022-02-24 17:13:12,717 DEBUG   HandlerThread:18352 [meta.py:_setup_git():200] setup git
+2022-02-24 17:13:12,839 DEBUG   HandlerThread:18352 [meta.py:_setup_git():207] setup git done
+2022-02-24 17:13:12,839 DEBUG   HandlerThread:18352 [meta.py:_save_pip():54] save pip
+2022-02-24 17:13:12,840 DEBUG   HandlerThread:18352 [meta.py:_save_pip():68] save pip done
+2022-02-24 17:13:12,840 DEBUG   HandlerThread:18352 [meta.py:_save_conda():75] save conda
+2022-02-24 17:13:12,927 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\requirements.txt
+2022-02-24 17:13:12,928 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\conda-environment.yaml
+2022-02-24 17:13:13,940 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:13:15,484 DEBUG   HandlerThread:18352 [meta.py:_save_conda():85] save conda done
+2022-02-24 17:13:15,484 DEBUG   HandlerThread:18352 [meta.py:probe():248] probe done
+2022-02-24 17:13:15,671 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:13:15,672 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:13:15,956 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:13:15,956 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-metadata.json
+2022-02-24 17:13:15,990 DEBUG   SenderThread:18352 [sender.py:send():235] send: files
+2022-02-24 17:13:15,990 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-24 17:13:17,053 INFO    Thread-17 :18352 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\AppData\Local\Temp\tmpgp3zi8w7wandb\1gh4phhx-wandb-metadata.json
+2022-02-24 17:13:18,227 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:13:31,006 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:13:31,006 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:13:44,402 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:13:46,381 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:13:46,381 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:14:02,395 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:14:02,395 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:14:18,116 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:14:18,116 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:14:18,785 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:14:33,788 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:14:33,788 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:14:49,395 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:14:49,395 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:14:51,069 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:14:53,116 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:15:04,928 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:15:04,929 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:15:06,570 DEBUG   SenderThread:18352 [sender.py:send():235] send: history
+2022-02-24 17:15:06,571 DEBUG   SenderThread:18352 [sender.py:send():235] send: summary
+2022-02-24 17:15:06,572 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 17:15:07,240 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json
+2022-02-24 17:15:09,257 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:15:20,334 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:15:20,334 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:15:27,594 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:15:35,677 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:15:35,677 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:15:51,037 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:15:51,038 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:16:01,924 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:16:06,390 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:16:06,390 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:16:21,740 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:16:21,740 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:16:36,303 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:16:37,052 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:16:37,052 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:16:41,194 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:16:52,379 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:16:52,380 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:16:56,760 DEBUG   SenderThread:18352 [sender.py:send():235] send: history
+2022-02-24 17:16:56,761 DEBUG   SenderThread:18352 [sender.py:send():235] send: summary
+2022-02-24 17:16:56,762 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 17:16:57,351 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json
+2022-02-24 17:16:59,367 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:17:07,710 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:17:07,710 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:17:10,689 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:17:23,083 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:17:23,084 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:17:38,435 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:17:38,436 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:17:45,062 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:17:54,677 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:17:54,677 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:18:10,866 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:18:10,867 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:18:19,551 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:18:26,966 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:18:26,967 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:18:43,022 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:18:43,022 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:18:52,552 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:18:53,959 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:18:58,434 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:18:58,434 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:19:09,513 DEBUG   SenderThread:18352 [sender.py:send():235] send: history
+2022-02-24 17:19:09,514 DEBUG   SenderThread:18352 [sender.py:send():235] send: summary
+2022-02-24 17:19:09,515 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 17:19:09,724 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json
+2022-02-24 17:19:11,756 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:19:13,802 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:19:13,803 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:19:28,473 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:19:29,168 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:19:29,169 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:19:46,131 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:19:46,132 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:20:01,460 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:20:01,460 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:20:02,904 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:20:16,788 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:20:16,789 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:20:32,128 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:20:32,128 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:20:37,352 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:20:47,461 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:20:47,462 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:20:54,785 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:21:02,814 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:21:02,815 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:21:09,702 DEBUG   SenderThread:18352 [sender.py:send():235] send: history
+2022-02-24 17:21:09,703 DEBUG   SenderThread:18352 [sender.py:send():235] send: summary
+2022-02-24 17:21:09,704 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 17:21:09,894 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json
+2022-02-24 17:21:10,897 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:21:11,797 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:21:18,802 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:21:18,803 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:21:34,583 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:21:34,583 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:21:46,217 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:21:50,412 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:21:50,412 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:22:05,756 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:22:05,756 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:22:20,584 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:22:21,084 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:22:21,085 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:22:37,207 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:22:37,208 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:22:46,772 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:22:52,566 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:22:52,567 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:22:54,957 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:23:01,877 DEBUG   SenderThread:18352 [sender.py:send():235] send: history
+2022-02-24 17:23:01,877 DEBUG   SenderThread:18352 [sender.py:send():235] send: summary
+2022-02-24 17:23:01,878 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 17:23:01,926 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json
+2022-02-24 17:23:02,930 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:23:07,930 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:23:07,930 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:23:23,551 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:23:23,552 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:23:29,366 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:23:38,928 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:23:38,929 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:23:54,522 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:23:54,522 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:24:03,761 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:24:09,957 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:24:09,958 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:24:25,288 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:24:25,289 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:24:38,119 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:24:40,679 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:24:40,679 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:24:41,861 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:24:55,621 DEBUG   SenderThread:18352 [sender.py:send():235] send: history
+2022-02-24 17:24:55,622 DEBUG   SenderThread:18352 [sender.py:send():235] send: summary
+2022-02-24 17:24:55,623 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 17:24:55,976 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json
+2022-02-24 17:24:56,039 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:24:56,040 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:24:57,991 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:25:11,425 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:25:11,426 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:25:12,462 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:25:26,755 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:25:26,756 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:25:42,082 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:25:42,083 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:25:46,849 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:25:57,441 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:25:57,442 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:26:13,146 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:26:13,146 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:26:21,187 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:26:28,470 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:26:28,471 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:26:33,991 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:26:43,803 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:26:43,803 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:26:47,938 DEBUG   SenderThread:18352 [sender.py:send():235] send: history
+2022-02-24 17:26:47,939 DEBUG   SenderThread:18352 [sender.py:send():235] send: summary
+2022-02-24 17:26:47,940 INFO    SenderThread:18352 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 17:26:48,131 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json
+2022-02-24 17:26:50,147 INFO    Thread-12 :18352 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log
+2022-02-24 17:26:55,618 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:26:59,131 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:26:59,131 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:27:14,505 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:27:14,505 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:27:29,846 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:27:29,847 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:27:30,201 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:27:45,207 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:27:45,208 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:28:00,549 DEBUG   HandlerThread:18352 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 17:28:00,550 DEBUG   SenderThread:18352 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 17:28:04,555 DEBUG   SenderThread:18352 [sender.py:send():235] send: stats
+2022-02-24 17:28:04,740 WARNING MainThread:18352 [internal.py:wandb_internal():152] Internal process interrupt: 1
+2022-02-24 17:28:04,943 WARNING MainThread:18352 [internal.py:wandb_internal():152] Internal process interrupt: 2
+2022-02-24 17:28:04,944 ERROR   MainThread:18352 [internal.py:wandb_internal():155] Internal process interrupted.
+2022-02-24 17:28:05,568 INFO    SenderThread:18352 [sender.py:finish():1075] shutting down sender
+2022-02-24 17:28:05,568 INFO    HandlerThread:18352 [handler.py:finish():739] shutting down handler
+2022-02-24 17:28:05,568 INFO    WriterThread:18352 [datastore.py:close():281] close: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\run-2briblqt.wandb
+2022-02-24 17:28:05,568 INFO    SenderThread:18352 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-24 17:28:05,756 INFO    SenderThread:18352 [dir_watcher.py:finish():313] scan: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files
+2022-02-24 17:28:05,756 INFO    SenderThread:18352 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\conda-environment.yaml conda-environment.yaml
+2022-02-24 17:28:05,757 INFO    SenderThread:18352 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\config.yaml config.yaml
+2022-02-24 17:28:05,758 INFO    SenderThread:18352 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\output.log output.log
+2022-02-24 17:28:05,758 INFO    SenderThread:18352 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\requirements.txt requirements.txt
+2022-02-24 17:28:05,767 INFO    SenderThread:18352 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-metadata.json wandb-metadata.json
+2022-02-24 17:28:05,767 INFO    SenderThread:18352 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_171305-2briblqt\files\wandb-summary.json wandb-summary.json
+2022-02-24 17:28:05,768 INFO    SenderThread:18352 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-24 17:28:05,768 INFO    SenderThread:18352 [file_pusher.py:join():182] waiting for file pusher

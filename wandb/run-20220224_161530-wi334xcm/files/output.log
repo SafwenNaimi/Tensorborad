@@ -1,0 +1,11 @@
+True
+['ants', 'bees']
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+Traceback (most recent call last):
+  File "c:\Users\Safwen\Desktop\Tensorborad\main.py", line 193, in <module>
+    model = create_model(
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\timm\models\factory.py", line 59, in create_model
+    raise RuntimeError('Unknown model (%s)' % model_name)
+RuntimeError: Unknown model (convnext_xlarge_22k)

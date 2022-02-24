@@ -16,8 +16,11 @@ import wandb
 wandb.login()
 
 hyperparameter_defaults = dict(
-    batch_size = 8,
+    batch_size = 32,
     learning_rate = 0.001,
+    momentum = 0.9,
+    gamma = 0.1,
+    step_size = 7,
     epochs = 10,
     pretrained = True
     )
@@ -122,18 +125,24 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs
             if phase == 'train':
                 scheduler.step()
 
-            epoch_loss = running_loss / dataset_sizes[phase]
-            epoch_acc = running_corrects.double() / dataset_sizes[phase]
-
-            print('{} Loss: {:.4f} Acc: {:.4f}'.format(
-                phase, epoch_loss, epoch_acc))
+            epoch_loss_test = running_loss / dataset_sizes['test']
+            epoch_acc_test = running_corrects.double() / dataset_sizes['test']
+            epoch_loss_train = running_loss / dataset_sizes['train']
+            epoch_acc_train = running_corrects.double() / dataset_sizes['train']
+            if phase == 'train':
+                print('train: Loss: {:.4f} Acc: {:.4f}'.format(
+                epoch_loss_train, epoch_acc_train))
+            else:
+                print('test: Loss: {:.4f} Acc: {:.4f}'.format(
+                epoch_loss_test, epoch_acc_test))
 
             # deep copy the model
-            if phase == 'test' and epoch_acc > best_acc:
-                best_acc = epoch_acc
+            if phase == 'test' and epoch_acc_test > best_acc:
+                best_acc = epoch_acc_test
                 best_model_wts = copy.deepcopy(model.state_dict())
-            metrics = {'accuracy': epoch_acc, 'loss': epoch_loss}
-            wandb.log(metrics)
+            metrics = {'accuracy_test': epoch_acc_test, 'loss_test': epoch_loss_test,
+            'accuracy_train': epoch_acc_train, 'loss_train': epoch_loss_train}
+        wandb.log(metrics)
         print()
 
     
@@ -147,41 +156,11 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs
     return model
 
 
-#### Finetuning the convnet ####
-# Load a pretrained model and reset final fully connected layer.
-"""
-model = models.resnet18(pretrained=True)
-num_ftrs = model.fc.in_features
-# Here the size of each output sample is set to 2.
-# Alternatively, it can be generalized to nn.Linear(num_ftrs, len(class_names)).
-model.fc = nn.Linear(num_ftrs, 2)
 
-model = model.to(device)
 
-criterion = nn.CrossEntropyLoss()
 
-# Observe that all parameters are being optimized
-optimizer = optim.SGD(model.parameters(), lr=0.001)
 
-# StepLR Decays the learning rate of each parameter group by gamma every step_size epochs
-# Decay LR by a factor of 0.1 every 7 epochs
-# Learning rate scheduling should be applied after optimizer’s update
-# e.g., you should write your code this way:
-# for epoch in range(100):
-#     train(...)
-#     validate(...)
-#     scheduler.step()
-
-step_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
-
-model = train_model(model, criterion, optimizer, step_lr_scheduler, num_epochs=25)
-"""
-
-#### ConvNet as fixed feature extractor ####
-# Here, we need to freeze all the network except the final layer.
-# We need to set requires_grad == False to freeze the parameters so that the gradients are not computed in backward()
-
-model_conv = torchvision.models.resnet18(pretrained=config.pretrained)
+model_conv = torchvision.models.resnet50(pretrained=config.pretrained)
 for param in model_conv.parameters():
     param.requires_grad = False
 
@@ -196,17 +175,48 @@ criterion = nn.CrossEntropyLoss()
 
 # Observe that only parameters of final layer are being optimized as
 # opposed to before.
-optimizer_conv = optim.SGD(model_conv.fc.parameters(), lr=0.001, momentum=0.9)
+
+optimizer_conv = optim.SGD(model_conv.fc.parameters(), lr=config.learning_rate, momentum=config.momentum)
 
 # Decay LR by a factor of 0.1 every 7 epochs
-exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=7, gamma=0.1)
+exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=config.step_size, gamma=config.gamma)
 
 model_conv = train_model(model_conv, criterion, optimizer_conv,
                          exp_lr_scheduler, num_epochs=config.epochs)
 
 
 
+"""
+########## TRYING CONVNEXT ##########
+from timm.models import create_model
+import convnext
+model = create_model(
+        'convnext_tiny', 
+        pretrained=True, 
+        num_classes=1000, 
+        drop_path_rate=0,
+        layer_scale_init_value=1e-6,
+        head_init_scale=1.0,
+        )
+#### ConvNet as fixed feature extractor ####
+# Here, we need to freeze all the network except the final layer.
+# We need to set requires_grad == False to freeze the parameters so that the gradients are not computed in backward()
+model.head = nn.Linear(in_features=model.head.in_features,out_features=2,bias=True)
+model = model.to(device)
+print(model)
+wandb.watch(model)
+criterion = nn.CrossEntropyLoss()
 
+# Observe that only parameters of final layer are being optimized as
+# opposed to before.
 
+optimizer_conv = optim.SGD(model.parameters(), lr=config.learning_rate, momentum=config.momentum)
+
+# Decay LR by a factor of 0.1 every 7 epochs
+exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=config.step_size, gamma=config.gamma)
+
+model_conv = train_model(model, criterion, optimizer_conv,
+                         exp_lr_scheduler, num_epochs=config.epochs)
+"""
 
 

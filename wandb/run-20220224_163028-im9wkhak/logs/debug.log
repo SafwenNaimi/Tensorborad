@@ -1,0 +1,27 @@
+2022-02-24 16:30:28,345 INFO    MainThread:9412 [wandb_setup.py:_flush():75] Loading settings from C:\Users\Safwen\.config\wandb\settings
+2022-02-24 16:30:28,345 INFO    MainThread:9412 [wandb_setup.py:_flush():75] Loading settings from C:\Users\Safwen\Desktop\Tensorborad\wandb\settings
+2022-02-24 16:30:28,345 INFO    MainThread:9412 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-02-24 16:30:28,345 INFO    MainThread:9412 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': 'c:\\Users\\Safwen\\Desktop\\Tensorborad\\main.py'}
+2022-02-24 16:30:28,345 INFO    MainThread:9412 [wandb_init.py:_log_setup():386] Logging user logs to C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_163028-im9wkhak\logs\debug.log
+2022-02-24 16:30:28,359 INFO    MainThread:9412 [wandb_init.py:_log_setup():387] Logging internal logs to C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_163028-im9wkhak\logs\debug-internal.log
+2022-02-24 16:30:28,359 INFO    MainThread:9412 [wandb_init.py:init():420] calling init triggers
+2022-02-24 16:30:28,359 INFO    MainThread:9412 [wandb_init.py:init():425] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'learning_rate': 0.001, 'momentum': 0.9, 'gamma': 0.1, 'step_size': 7, 'epochs': 10, 'pretrained': False}
+2022-02-24 16:30:28,359 INFO    MainThread:9412 [wandb_init.py:init():471] starting backend
+2022-02-24 16:30:28,359 INFO    MainThread:9412 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn, using: spawn
+2022-02-24 16:30:28,362 INFO    MainThread:9412 [backend.py:ensure_launched():219] starting backend process...
+2022-02-24 16:30:28,481 INFO    MainThread:9412 [backend.py:ensure_launched():224] started backend process with pid: 6416
+2022-02-24 16:30:28,482 INFO    MainThread:9412 [wandb_init.py:init():480] backend started and connected
+2022-02-24 16:30:28,484 INFO    MainThread:9412 [wandb_init.py:init():550] updated telemetry
+2022-02-24 16:30:28,554 INFO    MainThread:9412 [wandb_init.py:init():581] communicating current version
+2022-02-24 16:30:31,163 INFO    MainThread:9412 [wandb_init.py:init():586] got version response 
+2022-02-24 16:30:31,163 INFO    MainThread:9412 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-02-24 16:30:31,562 INFO    MainThread:9412 [wandb_init.py:init():624] starting run threads in backend
+2022-02-24 16:30:36,581 INFO    MainThread:9412 [wandb_run.py:_console_start():1827] atexit reg
+2022-02-24 16:30:36,582 INFO    MainThread:9412 [wandb_run.py:_redirect():1701] redirect: SettingsConsole.WRAP
+2022-02-24 16:30:36,582 INFO    MainThread:9412 [wandb_run.py:_redirect():1738] Wrapping output streams.
+2022-02-24 16:30:36,585 INFO    MainThread:9412 [wandb_run.py:_redirect():1762] Redirects installed.
+2022-02-24 16:30:36,585 INFO    MainThread:9412 [wandb_init.py:init():651] run started, returning control to user process
+2022-02-24 16:30:39,048 INFO    MainThread:9412 [wandb_watch.py:watch():43] Watching
+2022-02-24 16:33:52,125 INFO    MainThread:9412 [wandb_run.py:_atexit_cleanup():1797] got exitcode: 255
+2022-02-24 16:33:52,148 INFO    MainThread:9412 [wandb_run.py:_restore():1769] restore

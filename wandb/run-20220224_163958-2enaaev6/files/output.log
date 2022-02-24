@@ -1,0 +1,14 @@
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+True
+['ants', 'bees']
+Linear(in_features=768, out_features=1000, bias=True)
+Epoch 0/9
+----------
+Traceback (most recent call last):
+  File "c:\Users\Safwen\Desktop\Tensorborad\main.py", line 218, in <module>
+    model_conv = train_model(model, criterion, optimizer_conv,
+  File "c:\Users\Safwen\Desktop\Tensorborad\main.py", line 112, in train_model
+    _, preds = torch.max(outputs, 1)
+KeyboardInterrupt

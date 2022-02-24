@@ -1,0 +1,182 @@
+True
+['ants', 'bees']
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+Downloading: "https://dl.fbaipublicfiles.com/convnext/convnext_tiny_1k_224_ema.pth" to C:\Users\Safwen/.cache\torch\hub\checkpoints\convnext_tiny_1k_224_ema.pth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109M/109M [05:28<00:00, 348kB/s]
+Traceback (most recent call last):
+  File "c:\Users\Safwen\Desktop\Tensorborad\main.py", line 193, in <module>
+    model = create_model(
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\timm\models\factory.py", line 57, in create_model
+    model = create_fn(**model_args, **kwargs)
+  File "c:\Users\Safwen\Desktop\Tensorborad\convnext.py", line 162, in convnext_tiny
+    model.load_state_dict(checkpoint["model"])
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 1223, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for ConvNeXt:
+	size mismatch for head.weight: copying a param with shape torch.Size([1000, 768]) from checkpoint, the shape in current model is torch.Size([2, 768]).
+	size mismatch for head.bias: copying a param with shape torch.Size([1000]) from checkpoint, the shape in current model is torch.Size([2]).
