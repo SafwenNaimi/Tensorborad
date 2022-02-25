@@ -1,0 +1,274 @@
+2022-02-24 21:37:12,587 INFO    MainThread:17744 [internal.py:wandb_internal():89] W&B internal server running at pid: 17744, started at: 2022-02-24 21:37:12.586981
+2022-02-24 21:37:12,590 INFO    WriterThread:17744 [datastore.py:open_for_write():77] open: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\run-247955sm.wandb
+2022-02-24 21:37:12,590 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: check_version
+2022-02-24 21:37:12,603 DEBUG   SenderThread:17744 [sender.py:send():235] send: header
+2022-02-24 21:37:12,603 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: check_version
+2022-02-24 21:37:13,394 DEBUG   SenderThread:17744 [sender.py:send():235] send: run
+2022-02-24 21:37:14,172 INFO    SenderThread:17744 [dir_watcher.py:__init__():169] watching files in: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files
+2022-02-24 21:37:14,172 INFO    SenderThread:17744 [sender.py:_start_run_threads():809] run started: 247955sm with start time 1645735029
+2022-02-24 21:37:14,172 DEBUG   SenderThread:17744 [sender.py:send():235] send: summary
+2022-02-24 21:37:14,173 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: run_start
+2022-02-24 21:37:14,174 INFO    SenderThread:17744 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-24 21:37:15,242 INFO    Thread-12 :17744 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\wandb-summary.json
+2022-02-24 21:37:18,029 DEBUG   HandlerThread:17744 [meta.py:__init__():36] meta init
+2022-02-24 21:37:18,030 DEBUG   HandlerThread:17744 [meta.py:__init__():50] meta init done
+2022-02-24 21:37:18,030 DEBUG   HandlerThread:17744 [meta.py:probe():210] probe
+2022-02-24 21:37:18,416 DEBUG   HandlerThread:17744 [meta.py:_setup_git():200] setup git
+2022-02-24 21:37:18,735 DEBUG   HandlerThread:17744 [meta.py:_setup_git():207] setup git done
+2022-02-24 21:37:18,736 DEBUG   HandlerThread:17744 [meta.py:_save_pip():54] save pip
+2022-02-24 21:37:18,737 DEBUG   HandlerThread:17744 [meta.py:_save_pip():68] save pip done
+2022-02-24 21:37:18,737 DEBUG   HandlerThread:17744 [meta.py:_save_conda():75] save conda
+2022-02-24 21:37:19,318 INFO    Thread-12 :17744 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\conda-environment.yaml
+2022-02-24 21:37:19,319 INFO    Thread-12 :17744 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\requirements.txt
+2022-02-24 21:37:19,319 INFO    Thread-12 :17744 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\output.log
+2022-02-24 21:37:22,362 INFO    Thread-12 :17744 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\output.log
+2022-02-24 21:37:24,373 INFO    Thread-12 :17744 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\output.log
+2022-02-24 21:37:27,810 DEBUG   HandlerThread:17744 [meta.py:_save_conda():85] save conda done
+2022-02-24 21:37:27,810 DEBUG   HandlerThread:17744 [meta.py:probe():248] probe done
+2022-02-24 21:37:27,859 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:37:27,859 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:37:28,415 INFO    Thread-12 :17744 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\wandb-metadata.json
+2022-02-24 21:37:29,087 DEBUG   SenderThread:17744 [sender.py:send():235] send: files
+2022-02-24 21:37:29,087 INFO    SenderThread:17744 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-24 21:37:30,439 INFO    Thread-12 :17744 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\output.log
+2022-02-24 21:37:30,778 INFO    Thread-17 :17744 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\AppData\Local\Temp\tmpjcskudlvwandb\19t7j3md-wandb-metadata.json
+2022-02-24 21:37:39,209 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:37:39,210 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:37:50,272 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:37:54,864 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:37:54,864 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:38:10,409 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:38:10,409 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:38:24,584 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:38:26,598 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:38:26,599 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:38:43,553 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:38:43,554 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:38:58,825 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:38:59,350 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:38:59,351 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:39:15,224 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:39:15,224 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:39:30,771 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:39:30,772 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:39:33,067 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:39:46,317 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:39:46,317 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:40:02,318 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:40:02,319 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:40:07,299 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:40:18,115 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:40:18,116 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:40:34,634 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:40:34,634 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:40:41,676 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:40:50,569 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:40:50,569 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:41:06,359 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:41:06,360 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:41:15,948 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:41:22,900 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:41:22,900 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:41:38,631 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:41:38,632 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:41:50,245 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:41:54,646 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:41:54,647 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:42:10,178 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:42:10,178 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:42:24,513 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:42:26,303 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:42:26,303 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:42:42,334 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:42:42,335 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:42:57,864 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:42:57,864 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:42:58,748 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:43:13,394 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:43:13,395 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:43:29,661 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:43:29,661 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:43:32,971 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:43:45,567 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:43:45,568 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:44:01,160 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:44:01,161 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:44:07,234 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:44:16,978 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:44:16,978 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:44:32,553 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:44:32,554 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:44:41,499 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:44:48,157 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:44:48,157 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:45:03,719 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:45:03,720 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:45:15,764 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:45:19,282 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:45:19,282 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:45:34,814 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:45:34,815 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:45:50,031 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:45:50,442 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:45:50,442 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:46:06,037 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:46:06,038 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:46:21,579 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:46:21,579 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:46:24,369 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:46:37,130 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:46:37,130 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:46:52,739 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:46:52,740 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:46:58,660 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:47:08,375 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:47:08,376 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:47:24,666 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:47:24,667 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:47:33,165 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:47:40,382 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:47:40,383 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:47:55,944 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:47:55,944 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:48:07,463 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:48:11,505 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:48:11,506 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:48:27,051 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:48:27,052 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:48:41,685 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:48:42,632 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:48:42,632 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:48:58,271 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:48:58,271 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:49:13,833 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:49:13,833 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:49:15,943 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:49:29,474 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:49:29,475 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:49:45,210 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:49:45,210 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:49:50,205 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:50:00,725 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:50:00,726 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:50:16,410 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:50:16,411 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:50:24,650 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:50:32,019 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:50:32,019 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:50:47,581 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:50:47,582 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:50:58,965 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:51:03,110 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:51:03,111 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:51:18,847 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:51:18,847 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:51:33,311 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:51:34,847 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:51:34,848 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:51:51,256 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:51:51,256 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:52:06,818 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:52:06,818 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:52:07,677 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:52:22,395 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:52:22,396 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:52:38,536 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:52:38,537 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:52:42,003 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:52:54,711 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:52:54,711 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:53:10,379 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:53:10,380 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:53:16,413 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:53:25,926 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:53:25,926 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:53:41,598 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:53:41,599 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:53:50,723 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:53:57,254 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:53:57,255 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:54:12,865 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:54:12,866 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:54:25,108 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:54:28,447 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:54:28,447 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:54:44,335 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:54:44,335 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:54:59,462 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:55:00,159 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:55:00,160 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:55:16,225 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:55:16,226 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:55:33,007 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:55:33,007 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:55:34,100 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:55:49,115 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:55:49,116 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:56:05,128 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:56:05,128 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:56:08,146 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:56:21,243 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:56:21,244 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:56:38,141 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:56:38,142 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:56:42,598 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:56:55,990 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:56:55,991 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:57:12,004 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:57:12,004 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:57:17,020 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:57:29,365 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:57:29,366 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:57:45,523 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:57:45,524 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:57:51,391 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:58:01,821 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:58:01,821 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:58:17,473 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:58:17,473 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:58:25,769 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:58:33,192 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:58:33,193 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:58:48,956 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:58:48,957 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:59:00,111 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:59:04,911 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:59:04,912 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:59:20,444 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:59:20,444 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:59:34,497 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 21:59:36,318 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:59:36,318 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 21:59:51,898 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 21:59:51,898 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 22:00:07,894 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 22:00:07,895 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 22:00:08,824 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 22:00:23,788 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 22:00:23,789 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 22:00:39,321 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 22:00:39,322 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 22:00:43,152 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 22:00:56,319 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 22:00:56,319 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 22:01:12,099 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 22:01:12,100 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 22:01:17,558 DEBUG   SenderThread:17744 [sender.py:send():235] send: stats
+2022-02-24 22:01:29,267 DEBUG   HandlerThread:17744 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-24 22:01:29,268 DEBUG   SenderThread:17744 [sender.py:send_request():249] send_request: stop_status
+2022-02-24 22:01:38,235 WARNING MainThread:17744 [internal.py:wandb_internal():152] Internal process interrupt: 1
+2022-02-24 22:01:38,618 WARNING MainThread:17744 [internal.py:wandb_internal():152] Internal process interrupt: 2
+2022-02-24 22:01:38,618 ERROR   MainThread:17744 [internal.py:wandb_internal():155] Internal process interrupted.
+2022-02-24 22:01:38,738 INFO    WriterThread:17744 [datastore.py:close():281] close: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\run-247955sm.wandb
+2022-02-24 22:01:38,849 INFO    SenderThread:17744 [sender.py:finish():1075] shutting down sender
+2022-02-24 22:01:38,849 INFO    SenderThread:17744 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-24 22:01:38,849 INFO    HandlerThread:17744 [handler.py:finish():739] shutting down handler
+2022-02-24 22:01:39,210 INFO    SenderThread:17744 [dir_watcher.py:finish():313] scan: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files
+2022-02-24 22:01:39,210 INFO    SenderThread:17744 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\conda-environment.yaml conda-environment.yaml
+2022-02-24 22:01:39,211 INFO    SenderThread:17744 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\config.yaml config.yaml
+2022-02-24 22:01:39,211 INFO    SenderThread:17744 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\output.log output.log
+2022-02-24 22:01:39,212 INFO    SenderThread:17744 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\requirements.txt requirements.txt
+2022-02-24 22:01:39,221 INFO    SenderThread:17744 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\wandb-metadata.json wandb-metadata.json
+2022-02-24 22:01:39,221 INFO    SenderThread:17744 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220224_213709-247955sm\files\wandb-summary.json wandb-summary.json
+2022-02-24 22:01:39,222 INFO    SenderThread:17744 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-24 22:01:39,223 INFO    SenderThread:17744 [file_pusher.py:join():182] waiting for file pusher

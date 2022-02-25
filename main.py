@@ -25,7 +25,7 @@ hyperparameter_defaults = dict(
     pretrained = True
     )
 
-wandb.init(config=hyperparameter_defaults, project="ants VS bees")
+wandb.init(config=hyperparameter_defaults, project="CIFAR10")
 config = wandb.config
 
 
@@ -34,24 +34,25 @@ print(tf.test.is_gpu_available(cuda_only=False,min_cuda_compute_capability=None)
 mean = np.array([0.5, 0.5, 0.5])
 std = np.array([0.25, 0.25, 0.25])
 
-label_names={'ants', 'bees'}
+#label_names={'ants', 'bees'}
+label_names={'airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'}
 
 data_transforms = {
     'train': transforms.Compose([
-        transforms.RandomResizedCrop(224),
+        transforms.RandomResizedCrop(32), #224
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ]),
     'test': transforms.Compose([
-        transforms.Resize(256),
-        transforms.CenterCrop(224),
+        transforms.Resize(46), #256
+        transforms.CenterCrop(32), #224
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ])
 }
 
-data_dir = 'hymenoptera_data'
+data_dir = 'CIFAR10'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'test']}
@@ -160,13 +161,13 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs
 
 
 
-model_conv = torchvision.models.resnet50(pretrained=config.pretrained)
+model_conv = torchvision.models.resnet18(pretrained=config.pretrained)
 for param in model_conv.parameters():
     param.requires_grad = False
 
 # Parameters of newly constructed modules have requires_grad=True by default
 num_ftrs = model_conv.fc.in_features
-model_conv.fc = nn.Linear(num_ftrs, 2)
+model_conv.fc = nn.Linear(num_ftrs, 10)
 
 model_conv = model_conv.to(device)
 wandb.watch(model_conv)

@@ -1,0 +1,6 @@
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+True
+['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+Epoch 0/9
