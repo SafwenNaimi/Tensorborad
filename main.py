@@ -16,7 +16,7 @@ import wandb
 wandb.login()
 
 hyperparameter_defaults = dict(
-    batch_size = 32,
+    batch_size = 16,
     learning_rate = 0.001,
     momentum = 0.9,
     gamma = 0.1,
