@@ -1,0 +1,47 @@
+True
+['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+Epoch 0/9
+----------
+train: Loss: 3.0867 Acc: 0.1265
+test: Loss: 3.4042 Acc: 0.1324
+Epoch 1/9
+----------
+train: Loss: 3.1121 Acc: 0.1329
+test: Loss: 3.0696 Acc: 0.1473
+Epoch 2/9
+----------
+train: Loss: 3.1278 Acc: 0.1325
+test: Loss: 3.3645 Acc: 0.1339
+Epoch 3/9
+----------
+train: Loss: 3.1197 Acc: 0.1317
+test: Loss: 3.3902 Acc: 0.1268
+Epoch 4/9
+----------
+train: Loss: 3.1276 Acc: 0.1331
+test: Loss: 3.0983 Acc: 0.1361
+Epoch 5/9
+----------
+train: Loss: 3.1012 Acc: 0.1340
+test: Loss: 3.0821 Acc: 0.1423
+Epoch 6/9
+----------
+train: Loss: 3.1382 Acc: 0.1321
+test: Loss: 3.1577 Acc: 0.1389
+Epoch 7/9
+----------
+train: Loss: 2.5463 Acc: 0.1452
+test: Loss: 2.3991 Acc: 0.1591
+Epoch 8/9
+----------
+train: Loss: 2.3953 Acc: 0.1529
+test: Loss: 2.3827 Acc: 0.1705
+Epoch 9/9
+----------
+train: Loss: 2.3480 Acc: 0.1553
+test: Loss: 2.3813 Acc: 0.1639
+Training complete in 47m 40s
+Best val Acc: 0.170500

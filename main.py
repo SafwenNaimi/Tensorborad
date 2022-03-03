@@ -161,7 +161,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs
 
 
 
-model_conv = torchvision.models.resnet18(pretrained=config.pretrained)
+model_conv = torchvision.models.vgg19(pretrained=False)
 for param in model_conv.parameters():
     param.requires_grad = False
 
@@ -193,7 +193,7 @@ from timm.models import create_model
 import convnext
 model = create_model(
         'convnext_tiny', 
-        pretrained=True, 
+        pretrained=False, 
         num_classes=1000, 
         drop_path_rate=0,
         layer_scale_init_value=1e-6,
@@ -202,7 +202,7 @@ model = create_model(
 #### ConvNet as fixed feature extractor ####
 # Here, we need to freeze all the network except the final layer.
 # We need to set requires_grad == False to freeze the parameters so that the gradients are not computed in backward()
-model.head = nn.Linear(in_features=model.head.in_features,out_features=2,bias=True)
+model.head = nn.Linear(in_features=model.head.in_features,out_features=10,bias=True)
 model = model.to(device)
 print(model)
 wandb.watch(model)
@@ -218,6 +218,5 @@ exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=config.step_siz
 
 model_conv = train_model(model, criterion, optimizer_conv,
                          exp_lr_scheduler, num_epochs=config.epochs)
+
 """
-
-
