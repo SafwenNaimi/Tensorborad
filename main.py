@@ -161,7 +161,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs
 
 
 
-model_conv = torchvision.models.vgg19(pretrained=False)
+model_conv = torchvision.models.resnet34(pretrained=False)
 for param in model_conv.parameters():
     param.requires_grad = False
 

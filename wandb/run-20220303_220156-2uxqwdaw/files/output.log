@@ -1,0 +1,58 @@
+True
+['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+WARNING:tensorflow:From c:\Users\Safwen\Desktop\Tensorborad\main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+Epoch 0/9
+----------
+train: Loss: 2.3639 Acc: 0.1565
+test: Loss: 2.2992 Acc: 0.1845
+Epoch 1/9
+----------
+train: Loss: 2.3520 Acc: 0.1621
+test: Loss: 2.3716 Acc: 0.1770
+Epoch 2/9
+----------
+train: Loss: 2.3479 Acc: 0.1641
+test: Loss: 2.2737 Acc: 0.1911
+Epoch 3/9
+----------
+train: Loss: 2.3476 Acc: 0.1641
+test: Loss: 2.3077 Acc: 0.1634
+Epoch 4/9
+----------
+train: Loss: 2.3496 Acc: 0.1625
+test: Loss: 2.3381 Acc: 0.1922
+Epoch 5/9
+----------
+train: Loss: 2.3503 Acc: 0.1658
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "C:\Users\Safwen\anaconda3\lib\linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "C:\Users\Safwen\anaconda3\lib\linecache.py", line 95, in updatecache
+    stat = os.stat(fullname)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "c:\Users\Safwen\Desktop\Tensorborad\main.py", line 185, in <module>
+    model_conv = train_model(model_conv, criterion, optimizer_conv,
+  File "c:\Users\Safwen\Desktop\Tensorborad\main.py", line 107, in train_model
+    for inputs, labels in dataloaders[phase]:
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 178, in __getitem__
+    sample = self.loader(path)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 215, in default_loader
+    return pil_loader(path)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 196, in pil_loader
+    img = Image.open(f)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\PIL\Image.py", line 2900, in open
+    prefix = fp.read(16)
+KeyboardInterrupt
