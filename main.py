@@ -160,7 +160,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs
 
 
 
-
+"""
 model_conv = torchvision.models.resnet34(pretrained=False)
 for param in model_conv.parameters():
     param.requires_grad = False
@@ -190,7 +190,7 @@ model_conv = train_model(model_conv, criterion, optimizer_conv,
 """
 ########## TRYING CONVNEXT ##########
 from timm.models import create_model
-import convnext
+#import convnext
 model = create_model(
         'convnext_tiny', 
         pretrained=False, 
@@ -219,4 +219,3 @@ exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=config.step_siz
 model_conv = train_model(model, criterion, optimizer_conv,
                          exp_lr_scheduler, num_epochs=config.epochs)
 
-"""
