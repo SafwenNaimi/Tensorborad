@@ -1,0 +1,5 @@
+2022-03-08 16:11:17,388 INFO    MainThread:1376 [internal.py:wandb_internal():89] W&B internal server running at pid: 1376, started at: 2022-03-08 16:11:17.387567
+2022-03-08 16:11:17,390 INFO    WriterThread:1376 [datastore.py:open_for_write():77] open: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_161113-ljp90tvg\run-ljp90tvg.wandb
+2022-03-08 16:11:17,391 DEBUG   HandlerThread:1376 [handler.py:handle_request():131] handle_request: check_version
+2022-03-08 16:11:17,406 DEBUG   SenderThread:1376 [sender.py:send():235] send: header
+2022-03-08 16:11:17,406 DEBUG   SenderThread:1376 [sender.py:send_request():249] send_request: check_version

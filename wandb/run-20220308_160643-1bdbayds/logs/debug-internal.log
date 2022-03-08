@@ -1,0 +1,6 @@
+2022-03-08 16:06:46,936 INFO    MainThread:20096 [internal.py:wandb_internal():89] W&B internal server running at pid: 20096, started at: 2022-03-08 16:06:46.935372
+2022-03-08 16:06:46,939 INFO    WriterThread:20096 [datastore.py:open_for_write():77] open: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_160643-1bdbayds\run-1bdbayds.wandb
+2022-03-08 16:06:46,940 DEBUG   HandlerThread:20096 [handler.py:handle_request():131] handle_request: check_version
+2022-03-08 16:06:46,954 DEBUG   SenderThread:20096 [sender.py:send():235] send: header
+2022-03-08 16:06:46,954 DEBUG   SenderThread:20096 [sender.py:send_request():249] send_request: check_version
+2022-03-08 16:06:47,541 DEBUG   SenderThread:20096 [sender.py:send():235] send: run

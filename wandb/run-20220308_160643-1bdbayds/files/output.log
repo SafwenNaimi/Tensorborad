@@ -1,0 +1,55 @@
+['ants', 'bees']
+16
+Epoch 0/49
+----------
+train: Loss: 0.6847 Acc: 0.5533
+test: Loss: 0.6539 Acc: 0.7516
+Epoch 1/49
+----------
+train: Loss: 0.6274 Acc: 0.8443
+test: Loss: 0.6037 Acc: 0.8824
+Epoch 2/49
+----------
+train: Loss: 0.5858 Acc: 0.9057
+test: Loss: 0.5595 Acc: 0.9346
+Epoch 3/49
+----------
+train: Loss: 0.5400 Acc: 0.9385
+test: Loss: 0.5180 Acc: 0.9477
+Epoch 4/49
+----------
+train: Loss: 0.5027 Acc: 0.9467
+test: Loss: 0.4797 Acc: 0.9608
+Epoch 5/49
+----------
+train: Loss: 0.4699 Acc: 0.9426
+test: Loss: 0.4455 Acc: 0.9739
+Epoch 6/49
+----------
+train: Loss: 0.4373 Acc: 0.9713
+test: Loss: 0.4154 Acc: 0.9739
+Epoch 7/49
+----------
+train: Loss: 0.4239 Acc: 0.9713
+test: Loss: 0.4125 Acc: 0.9739
+Epoch 8/49
+----------
+train: Loss: 0.4245 Acc: 0.9590
+test: Loss: 0.4097 Acc: 0.9739
+Epoch 9/49
+----------
+train: Loss: 0.4201 Acc: 0.9672
+test: Loss: 0.4070 Acc: 0.9739
+Epoch 10/49
+----------
+train: Loss: 0.4269 Acc: 0.9467
+test: Loss: 0.4044 Acc: 0.9739
+Epoch 11/49
+----------
+train: Loss: 0.4087 Acc: 0.9754
+test: Loss: 0.4017 Acc: 0.9739
+Epoch 12/49
+----------
+train: Loss: 0.4089 Acc: 0.9631
+test: Loss: 0.3990 Acc: 0.9739
+Epoch 13/49

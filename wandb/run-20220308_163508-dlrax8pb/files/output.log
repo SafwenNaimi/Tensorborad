@@ -1,0 +1,28 @@
+wandb: WARNING Config item 'batch_size' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'pretrained' was locked by 'sweep' (ignored update).
+['ants', 'bees']
+14
+Epoch 0/9
+----------
+train: Loss: 0.6081 Acc: 0.7828
+Traceback (most recent call last):
+  File "main_0.py", line 185, in <module>
+    main()
+  File "main_0.py", line 180, in main
+    train_model(config, model, criterion, optimizer_conv,
+  File "main_0.py", line 92, in train_model
+    for inputs, labels in dataloaders[phase]:
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\collate.py", line 83, in default_collate
+    return [default_collate(samples) for samples in transposed]
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\collate.py", line 83, in <listcomp>
+    return [default_collate(samples) for samples in transposed]
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\collate.py", line 55, in default_collate
+    return torch.stack(batch, 0, out=out)
+RuntimeError: [enforce fail at ..\c10\core\CPUAllocator.cpp:75] data. DefaultCPUAllocator: not enough memory: you tried to allocate 8429568 bytes. Buy new RAM!

@@ -1,0 +1,35 @@
+wandb: WARNING Config item 'batch_size' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'pretrained' was locked by 'sweep' (ignored update).
+['ants', 'bees']
+16
+Epoch 0/9
+----------
+Traceback (most recent call last):
+  File "main_0.py", line 185, in <module>
+    main()
+  File "main_0.py", line 180, in main
+    train_model(config, model, criterion, optimizer_conv,
+  File "main_0.py", line 97, in train_model
+    outputs = model(inputs)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\Safwen\Desktop\Tensorborad\convnext.py", line 115, in forward
+    x = self.forward_features(x)
+  File "C:\Users\Safwen\Desktop\Tensorborad\convnext.py", line 111, in forward_features
+    x = self.stages[i](x)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\nn\modules\container.py", line 119, in forward
+    input = module(input)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\Safwen\Desktop\Tensorborad\convnext.py", line 41, in forward
+    x = self.norm(x)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\Safwen\Desktop\Tensorborad\convnext.py", line 137, in forward
+    return F.layer_norm(x, self.normalized_shape, self.weight, self.bias, self.eps)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\nn\functional.py", line 2205, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 4.00 GiB total capacity; 1.69 GiB already allocated; 990.98 MiB free; 1.79 GiB reserved in total by PyTorch)

@@ -204,3 +204,59 @@ wandb.errors.CommError: Sweep safwennaimi/param-sweep/b6vqjekz not found
 	batch_size: 8
 2022-03-08 15:39:18 INFO About to run command: python main_0.py --batch_size=8
 2022-03-08 15:39:23 INFO Running runs: ['md9mz72k']
+2022-03-08 16:20:50 INFO Running runs: []
+2022-03-08 16:20:50 INFO Agent received command: run
+2022-03-08 16:20:50 INFO Agent starting run with config:
+	batch_size: 9
+	learning_rate: 0.004017357858098887
+	pretrained: true
+2022-03-08 16:20:50 INFO About to run command: python main_0.py --batch_size=9 --learning_rate=0.004017357858098887 --pretrained=true
+2022-03-08 16:20:55 INFO Running runs: ['uieikvfl']
+2022-03-08 16:27:00 INFO Running runs: []
+2022-03-08 16:27:00 INFO Agent received command: run
+2022-03-08 16:27:00 INFO Agent starting run with config:
+	batch_size: 9
+	learning_rate: 0.006110182179883491
+	pretrained: false
+2022-03-08 16:27:03 INFO About to run command: python main_0.py --batch_size=9 --learning_rate=0.006110182179883491 --pretrained=false
+2022-03-08 16:27:08 INFO Running runs: ['dnhycgr9']
+2022-03-08 16:30:37 INFO Cleaning up finished run: dnhycgr9
+2022-03-08 16:30:37 INFO Agent received command: run
+2022-03-08 16:30:37 INFO Agent starting run with config:
+	batch_size: 8
+	learning_rate: 0.005246359524445433
+	pretrained: false
+2022-03-08 16:30:37 INFO About to run command: python main_0.py --batch_size=8 --learning_rate=0.005246359524445433 --pretrained=false
+2022-03-08 16:30:42 INFO Running runs: ['0ty9e51l']
+2022-03-08 16:34:16 INFO Cleaning up finished run: 0ty9e51l
+2022-03-08 16:34:17 INFO Agent received command: run
+2022-03-08 16:34:17 INFO Agent starting run with config:
+	batch_size: 16
+	learning_rate: 0.00927998600727073
+	pretrained: true
+2022-03-08 16:34:17 INFO About to run command: python main_0.py --batch_size=16 --learning_rate=0.00927998600727073 --pretrained=true
+2022-03-08 16:34:22 INFO Running runs: ['vxudbx9i']
+2022-03-08 16:34:55 INFO Cleaning up finished run: vxudbx9i
+2022-03-08 16:34:55 INFO Agent received command: run
+2022-03-08 16:34:55 INFO Agent starting run with config:
+	batch_size: 14
+	learning_rate: 0.004145226979269107
+	pretrained: true
+2022-03-08 16:34:55 INFO About to run command: python main_0.py --batch_size=14 --learning_rate=0.004145226979269107 --pretrained=true
+2022-03-08 16:35:00 INFO Running runs: ['dlrax8pb']
+2022-03-08 16:35:44 INFO Cleaning up finished run: dlrax8pb
+2022-03-08 16:35:44 INFO Agent received command: run
+2022-03-08 16:35:44 INFO Agent starting run with config:
+	batch_size: 14
+	learning_rate: 0.0044817059218339
+	pretrained: false
+2022-03-08 16:35:44 INFO About to run command: python main_0.py --batch_size=14 --learning_rate=0.0044817059218339 --pretrained=false
+2022-03-08 16:35:49 INFO Running runs: ['h6cikcfz']
+2022-03-08 16:39:05 INFO Cleaning up finished run: h6cikcfz
+2022-03-08 16:39:05 INFO Agent received command: run
+2022-03-08 16:39:05 INFO Agent starting run with config:
+	batch_size: 10
+	learning_rate: 0.004277010672150343
+	pretrained: false
+2022-03-08 16:39:05 INFO About to run command: python main_0.py --batch_size=10 --learning_rate=0.004277010672150343 --pretrained=false
+2022-03-08 16:39:10 INFO Running runs: ['nrt5n8jj']

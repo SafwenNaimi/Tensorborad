@@ -1,0 +1,60 @@
+wandb: WARNING Config item 'batch_size' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'pretrained' was locked by 'sweep' (ignored update).
+['ants', 'bees']
+14
+Epoch 0/9
+----------
+train: Loss: 0.6016 Acc: 0.7951
+test: Loss: 0.4795 Acc: 0.9542
+Epoch 1/9
+----------
+train: Loss: 0.4200 Acc: 0.9713
+test: Loss: 0.3421 Acc: 0.9739
+Epoch 2/9
+----------
+train: Loss: 0.3225 Acc: 0.9631
+test: Loss: 0.2605 Acc: 0.9739
+Epoch 3/9
+----------
+train: Loss: 0.2436 Acc: 0.9713
+test: Loss: 0.2098 Acc: 0.9673
+Epoch 4/9
+----------
+train: Loss: 0.1993 Acc: 0.9795
+test: Loss: 0.1725 Acc: 0.9739
+Epoch 5/9
+----------
+train: Loss: 0.1698 Acc: 0.9754
+test: Loss: 0.1499 Acc: 0.9739
+Epoch 6/9
+----------
+train: Loss: 0.1509 Acc: 0.9795
+test: Loss: 0.1336 Acc: 0.9739
+Epoch 7/9
+----------
+train: Loss: 0.1343 Acc: 0.9918
+test: Loss: 0.1323 Acc: 0.9739
+Epoch 8/9
+----------
+train: Loss: 0.1463 Acc: 0.9795
+Traceback (most recent call last):
+  File "main_0.py", line 185, in <module>
+    main()
+  File "main_0.py", line 180, in main
+    train_model(config, model, criterion, optimizer_conv,
+  File "main_0.py", line 92, in train_model
+    for inputs, labels in dataloaders[phase]:
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\collate.py", line 83, in default_collate
+    return [default_collate(samples) for samples in transposed]
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\collate.py", line 83, in <listcomp>
+    return [default_collate(samples) for samples in transposed]
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\collate.py", line 55, in default_collate
+    return torch.stack(batch, 0, out=out)
+RuntimeError: [enforce fail at ..\c10\core\CPUAllocator.cpp:75] data. DefaultCPUAllocator: not enough memory: you tried to allocate 8429568 bytes. Buy new RAM!

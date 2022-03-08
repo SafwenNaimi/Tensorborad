@@ -23,16 +23,17 @@ wandb.init(entity="safwennaimi", project="sweep")
 
 # WandB – Config is a variable that holds and saves hyperparameters and inputs
 config = wandb.config          # Initialize config
-config.batch_size = 4          # input batch size for training (default: 64)
+config.batch_size = 16          # input batch size for training (default: 64)
 config.test_batch_size = 10    # input batch size for testing (default: 1000)
-config.epochs = 50             # number of epochs to train (default: 10)
-config.learning_rate = 0.1               # learning rate (default: 0.01)
+config.epochs = 10             # number of epochs to train (default: 10)
+config.learning_rate = 0.001               # learning rate (default: 0.01)
 config.momentum = 0.1          # SGD momentum (default: 0.5) 
 config.no_cuda = False         # disables CUDA training
 config.seed = 42               # random seed (default: 42)
 config.log_interval = 10     # how many batches to wait before logging training status
 config.step_size = 7
 config.gamma = .1
+config.pretrained = False
 
 use_cuda = not config.no_cuda and torch.cuda.is_available()
 device = torch.device("cuda" if use_cuda else "cpu")
@@ -44,14 +45,14 @@ label_names={'ants', 'bees'}
 
 data_transforms = {
     'train': transforms.Compose([
-        transforms.RandomResizedCrop(32), #224
+        transforms.RandomResizedCrop(224), #224
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ]),
     'test': transforms.Compose([
-        transforms.Resize(46), #256
-        transforms.CenterCrop(32), #224
+        transforms.Resize(256), #256
+        transforms.CenterCrop(224), #224
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ])
@@ -155,7 +156,7 @@ def main():
 
     model = create_model(
         'convnext_tiny', 
-        pretrained=False, 
+        pretrained=config.pretrained, 
         num_classes=1000, 
         drop_path_rate=0,
         layer_scale_init_value=1e-6,

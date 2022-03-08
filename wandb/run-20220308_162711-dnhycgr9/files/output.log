@@ -1,0 +1,47 @@
+wandb: WARNING Config item 'batch_size' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'learning_rate' was locked by 'sweep' (ignored update).
+wandb: WARNING Config item 'pretrained' was locked by 'sweep' (ignored update).
+['ants', 'bees']
+9
+Epoch 0/9
+----------
+train: Loss: 0.5117 Acc: 0.8852
+test: Loss: 0.3494 Acc: 0.9608
+Epoch 1/9
+----------
+train: Loss: 0.2846 Acc: 0.9713
+test: Loss: 0.2038 Acc: 0.9804
+Epoch 2/9
+----------
+train: Loss: 0.2000 Acc: 0.9590
+test: Loss: 0.1526 Acc: 0.9673
+Epoch 3/9
+----------
+train: Loss: 0.1427 Acc: 0.9754
+test: Loss: 0.1160 Acc: 0.9804
+Epoch 4/9
+----------
+train: Loss: 0.1102 Acc: 0.9836
+test: Loss: 0.0932 Acc: 0.9739
+Epoch 5/9
+----------
+train: Loss: 0.0961 Acc: 0.9836
+test: Loss: 0.0882 Acc: 0.9869
+Epoch 6/9
+----------
+train: Loss: 0.0901 Acc: 0.9795
+test: Loss: 0.0855 Acc: 0.9739
+Epoch 7/9
+----------
+train: Loss: 0.0733 Acc: 0.9877
+test: Loss: 0.0849 Acc: 0.9739
+Epoch 8/9
+----------
+train: Loss: 0.0842 Acc: 0.9877
+test: Loss: 0.0831 Acc: 0.9739
+Epoch 9/9
+----------
+train: Loss: 0.0857 Acc: 0.9754
+test: Loss: 0.0811 Acc: 0.9739
+Training complete in 3m 5s
+Best val Acc: 0.986928

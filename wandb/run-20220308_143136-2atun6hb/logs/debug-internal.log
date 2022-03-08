@@ -9,3 +9,62 @@
 2022-03-08 14:31:39,272 DEBUG   SenderThread:19820 [sender.py:send():235] send: summary
 2022-03-08 14:31:39,272 INFO    SenderThread:19820 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
 2022-03-08 14:31:39,273 DEBUG   HandlerThread:19820 [handler.py:handle_request():131] handle_request: run_start
+2022-03-08 14:31:40,316 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\wandb-summary.json
+2022-03-08 14:31:43,234 DEBUG   HandlerThread:19820 [meta.py:__init__():36] meta init
+2022-03-08 14:31:43,234 DEBUG   HandlerThread:19820 [meta.py:__init__():50] meta init done
+2022-03-08 14:31:43,234 DEBUG   HandlerThread:19820 [meta.py:probe():210] probe
+2022-03-08 14:31:43,714 DEBUG   HandlerThread:19820 [meta.py:_setup_git():200] setup git
+2022-03-08 14:31:44,357 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log
+2022-03-08 14:31:44,399 DEBUG   HandlerThread:19820 [meta.py:_setup_git():207] setup git done
+2022-03-08 14:31:44,399 DEBUG   HandlerThread:19820 [meta.py:_save_pip():54] save pip
+2022-03-08 14:31:44,401 DEBUG   HandlerThread:19820 [meta.py:_save_pip():68] save pip done
+2022-03-08 14:31:44,401 DEBUG   HandlerThread:19820 [meta.py:_save_conda():75] save conda
+2022-03-08 14:31:45,359 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\conda-environment.yaml
+2022-03-08 14:31:45,360 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\requirements.txt
+2022-03-08 14:31:46,368 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log
+2022-03-08 14:31:47,606 DEBUG   HandlerThread:19820 [meta.py:_save_conda():85] save conda done
+2022-03-08 14:31:47,606 DEBUG   HandlerThread:19820 [meta.py:probe():248] probe done
+2022-03-08 14:31:47,903 DEBUG   HandlerThread:19820 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:31:47,903 DEBUG   SenderThread:19820 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:31:48,198 DEBUG   SenderThread:19820 [sender.py:send():235] send: files
+2022-03-08 14:31:48,199 INFO    SenderThread:19820 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-03-08 14:31:48,399 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\wandb-metadata.json
+2022-03-08 14:31:49,118 INFO    Thread-17 :19820 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\AppData\Local\Temp\tmpcs52ho2awandb\31ubpdrf-wandb-metadata.json
+2022-03-08 14:31:50,422 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log
+2022-03-08 14:32:03,210 DEBUG   HandlerThread:19820 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:32:03,210 DEBUG   SenderThread:19820 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:32:04,506 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log
+2022-03-08 14:32:06,118 DEBUG   SenderThread:19820 [sender.py:send():235] send: history
+2022-03-08 14:32:06,119 DEBUG   SenderThread:19820 [sender.py:send():235] send: summary
+2022-03-08 14:32:06,120 INFO    SenderThread:19820 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:32:06,510 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\wandb-summary.json
+2022-03-08 14:32:08,523 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log
+2022-03-08 14:32:14,982 DEBUG   SenderThread:19820 [sender.py:send():235] send: stats
+2022-03-08 14:32:18,711 DEBUG   HandlerThread:19820 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:32:18,711 DEBUG   SenderThread:19820 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:32:20,585 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log
+2022-03-08 14:32:22,574 DEBUG   SenderThread:19820 [sender.py:send():235] send: history
+2022-03-08 14:32:22,574 DEBUG   SenderThread:19820 [sender.py:send():235] send: summary
+2022-03-08 14:32:22,577 INFO    SenderThread:19820 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:32:22,601 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\wandb-summary.json
+2022-03-08 14:32:24,619 INFO    Thread-12 :19820 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log
+2022-03-08 14:32:25,688 WARNING MainThread:19820 [internal.py:wandb_internal():152] Internal process interrupt: 1
+2022-03-08 14:32:25,935 WARNING MainThread:19820 [internal.py:wandb_internal():152] Internal process interrupt: 2
+2022-03-08 14:32:25,935 ERROR   MainThread:19820 [internal.py:wandb_internal():155] Internal process interrupted.
+2022-03-08 14:32:26,493 INFO    HandlerThread:19820 [handler.py:finish():739] shutting down handler
+2022-03-08 14:32:26,494 INFO    WriterThread:19820 [datastore.py:close():281] close: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\run-2atun6hb.wandb
+2022-03-08 14:32:26,494 INFO    SenderThread:19820 [sender.py:finish():1075] shutting down sender
+2022-03-08 14:32:26,494 INFO    SenderThread:19820 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-08 14:32:26,648 INFO    SenderThread:19820 [dir_watcher.py:finish():313] scan: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files
+2022-03-08 14:32:26,648 INFO    SenderThread:19820 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\conda-environment.yaml conda-environment.yaml
+2022-03-08 14:32:26,649 INFO    SenderThread:19820 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\config.yaml config.yaml
+2022-03-08 14:32:26,649 INFO    SenderThread:19820 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log output.log
+2022-03-08 14:32:26,650 INFO    SenderThread:19820 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\requirements.txt requirements.txt
+2022-03-08 14:32:26,655 INFO    SenderThread:19820 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\wandb-metadata.json wandb-metadata.json
+2022-03-08 14:32:26,655 INFO    SenderThread:19820 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\wandb-summary.json wandb-summary.json
+2022-03-08 14:32:26,663 INFO    SenderThread:19820 [file_pusher.py:finish():177] shutting down file pusher
+2022-03-08 14:32:26,663 INFO    SenderThread:19820 [file_pusher.py:join():182] waiting for file pusher
+2022-03-08 14:32:27,510 INFO    Thread-18 :19820 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\config.yaml
+2022-03-08 14:32:27,715 INFO    Thread-20 :19820 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\requirements.txt
+2022-03-08 14:32:27,776 INFO    Thread-19 :19820 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\output.log
+2022-03-08 14:32:27,926 INFO    Thread-21 :19820 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files\wandb-summary.json
