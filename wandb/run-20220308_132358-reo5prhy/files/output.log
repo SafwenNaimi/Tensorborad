@@ -1,0 +1,339 @@
+WARNING:tensorflow:From main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+True
+['ants', 'bees']
+ConvNeXt(
+  (downsample_layers): ModuleList(
+    (0): Sequential(
+      (0): Conv2d(3, 96, kernel_size=(4, 4), stride=(4, 4))
+      (1): LayerNorm()
+    )
+    (1): Sequential(
+      (0): LayerNorm()
+      (1): Conv2d(96, 192, kernel_size=(2, 2), stride=(2, 2))
+    )
+    (2): Sequential(
+      (0): LayerNorm()
+      (1): Conv2d(192, 384, kernel_size=(2, 2), stride=(2, 2))
+    )
+    (3): Sequential(
+      (0): LayerNorm()
+      (1): Conv2d(384, 768, kernel_size=(2, 2), stride=(2, 2))
+    )
+  )
+  (stages): ModuleList(
+    (0): Sequential(
+      (0): Block(
+        (dwconv): Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=96, out_features=384, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=384, out_features=96, bias=True)
+        (drop_path): Identity()
+      )
+      (1): Block(
+        (dwconv): Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=96, out_features=384, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=384, out_features=96, bias=True)
+        (drop_path): Identity()
+      )
+      (2): Block(
+        (dwconv): Conv2d(96, 96, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=96)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=96, out_features=384, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=384, out_features=96, bias=True)
+        (drop_path): Identity()
+      )
+    )
+    (1): Sequential(
+      (0): Block(
+        (dwconv): Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=768, out_features=192, bias=True)
+        (drop_path): Identity()
+      )
+      (1): Block(
+        (dwconv): Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=768, out_features=192, bias=True)
+        (drop_path): Identity()
+      )
+      (2): Block(
+        (dwconv): Conv2d(192, 192, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=192)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=192, out_features=768, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=768, out_features=192, bias=True)
+        (drop_path): Identity()
+      )
+    )
+    (2): Sequential(
+      (0): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+      (1): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+      (2): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+      (3): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+      (4): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+      (5): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+      (6): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+      (7): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+      (8): Block(
+        (dwconv): Conv2d(384, 384, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=384)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=384, out_features=1536, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=1536, out_features=384, bias=True)
+        (drop_path): Identity()
+      )
+    )
+    (3): Sequential(
+      (0): Block(
+        (dwconv): Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=768, out_features=3072, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=3072, out_features=768, bias=True)
+        (drop_path): Identity()
+      )
+      (1): Block(
+        (dwconv): Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=768, out_features=3072, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=3072, out_features=768, bias=True)
+        (drop_path): Identity()
+      )
+      (2): Block(
+        (dwconv): Conv2d(768, 768, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3), groups=768)
+        (norm): LayerNorm()
+        (pwconv1): Linear(in_features=768, out_features=3072, bias=True)
+        (act): GELU()
+        (pwconv2): Linear(in_features=3072, out_features=768, bias=True)
+        (drop_path): Identity()
+      )
+    )
+  )
+  (norm): LayerNorm((768,), eps=1e-06, elementwise_affine=True)
+  (head): Linear(in_features=768, out_features=2, bias=True)
+)
+Epoch 0/38
+----------
+train: Loss: 0.8630 Acc: 0.5820
+test: Loss: 1.0735 Acc: 0.4771
+Epoch 1/38
+----------
+train: Loss: 0.9261 Acc: 0.4877
+test: Loss: 0.7637 Acc: 0.5163
+Epoch 2/38
+----------
+train: Loss: 0.7993 Acc: 0.5410
+test: Loss: 0.8325 Acc: 0.5490
+Epoch 3/38
+----------
+train: Loss: 0.7503 Acc: 0.5779
+test: Loss: 0.8504 Acc: 0.6144
+Epoch 4/38
+----------
+train: Loss: 0.7719 Acc: 0.5492
+test: Loss: 0.7911 Acc: 0.5621
+Epoch 5/38
+----------
+train: Loss: 0.7985 Acc: 0.5328
+test: Loss: 0.7711 Acc: 0.5686
+Epoch 6/38
+----------
+train: Loss: 0.7255 Acc: 0.5533
+test: Loss: 0.8218 Acc: 0.4771
+Epoch 7/38
+----------
+train: Loss: 0.7212 Acc: 0.5943
+test: Loss: 0.7528 Acc: 0.5163
+Epoch 8/38
+----------
+train: Loss: 0.6667 Acc: 0.6025
+test: Loss: 0.7342 Acc: 0.4967
+Epoch 9/38
+----------
+train: Loss: 0.6307 Acc: 0.6516
+test: Loss: 0.7293 Acc: 0.5359
+Epoch 10/38
+----------
+train: Loss: 0.6498 Acc: 0.5984
+test: Loss: 0.7222 Acc: 0.5359
+Epoch 11/38
+----------
+train: Loss: 0.6394 Acc: 0.6311
+test: Loss: 0.7149 Acc: 0.5752
+Epoch 12/38
+----------
+train: Loss: 0.6618 Acc: 0.6148
+test: Loss: 0.7025 Acc: 0.5817
+Epoch 13/38
+----------
+train: Loss: 0.6441 Acc: 0.6311
+test: Loss: 0.7097 Acc: 0.5294
+Epoch 14/38
+----------
+train: Loss: 0.6396 Acc: 0.6025
+test: Loss: 0.7090 Acc: 0.5294
+Epoch 15/38
+----------
+train: Loss: 0.6291 Acc: 0.6475
+test: Loss: 0.7091 Acc: 0.5294
+Epoch 16/38
+----------
+train: Loss: 0.6424 Acc: 0.5820
+test: Loss: 0.7086 Acc: 0.5359
+Epoch 17/38
+----------
+train: Loss: 0.6181 Acc: 0.6475
+test: Loss: 0.7078 Acc: 0.5359
+Epoch 18/38
+----------
+train: Loss: 0.6128 Acc: 0.6639
+test: Loss: 0.7063 Acc: 0.5490
+Epoch 19/38
+----------
+train: Loss: 0.6488 Acc: 0.6025
+test: Loss: 0.7064 Acc: 0.5490
+Epoch 20/38
+----------
+train: Loss: 0.6514 Acc: 0.5984
+test: Loss: 0.7051 Acc: 0.5490
+Epoch 21/38
+----------
+train: Loss: 0.6257 Acc: 0.6311
+test: Loss: 0.7052 Acc: 0.5490
+Epoch 22/38
+----------
+train: Loss: 0.6357 Acc: 0.6434
+test: Loss: 0.7052 Acc: 0.5490
+Epoch 23/38
+----------
+train: Loss: 0.6615 Acc: 0.5820
+test: Loss: 0.7051 Acc: 0.5490
+Epoch 24/38
+----------
+train: Loss: 0.6369 Acc: 0.6393
+test: Loss: 0.7052 Acc: 0.5490
+Epoch 25/38
+----------
+train: Loss: 0.6329 Acc: 0.6107
+test: Loss: 0.7052 Acc: 0.5490
+Epoch 26/38
+----------
+train: Loss: 0.6390 Acc: 0.6270
+test: Loss: 0.7052 Acc: 0.5490
+Epoch 27/38
+----------
+train: Loss: 0.6424 Acc: 0.6311
+test: Loss: 0.7051 Acc: 0.5490
+Epoch 28/38
+----------
+train: Loss: 0.6362 Acc: 0.5984
+test: Loss: 0.7051 Acc: 0.5490
+Epoch 29/38
+----------
+train: Loss: 0.6324 Acc: 0.6107
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 30/38
+----------
+train: Loss: 0.6663 Acc: 0.6230
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 31/38
+----------
+train: Loss: 0.6436 Acc: 0.6148
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 32/38
+----------
+train: Loss: 0.6103 Acc: 0.6803
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 33/38
+----------
+train: Loss: 0.6416 Acc: 0.6148
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 34/38
+----------
+train: Loss: 0.6298 Acc: 0.6639
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 35/38
+----------
+train: Loss: 0.6507 Acc: 0.6107
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 36/38
+----------
+train: Loss: 0.6223 Acc: 0.6311
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 37/38
+----------
+train: Loss: 0.6356 Acc: 0.6393
+test: Loss: 0.7050 Acc: 0.5490
+Epoch 38/38
+----------
+train: Loss: 0.6449 Acc: 0.6352
+test: Loss: 0.7050 Acc: 0.5490
+Training complete in 3m 6s
+Best val Acc: 0.614379

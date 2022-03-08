@@ -13,30 +13,34 @@ import copy
 import cv2
 import tensorflow as tf
 import wandb
+from timm.models import create_model
+import convnext
 import argparse
 wandb.login()
 
-hyperparameter_defaults = dict(
-    batch_size = 16,
-    learning_rate = 0.001,
-    momentum = 0.9,
-    gamma = 0.1,
-    step_size = 7,
-    epochs = 10,
-    pretrained = True
-    )
+wandb.init(entity="safwennaimi", project="sweep")
+#wandb.watch_called = False # Re-run the model without restarting the runtime, unnecessary after our next release
 
-wandb.init(config=hyperparameter_defaults, project="CIFAR10")
-config = wandb.config
+# WandB – Config is a variable that holds and saves hyperparameters and inputs
+config = wandb.config          # Initialize config
+config.batch_size = 4          # input batch size for training (default: 64)
+config.test_batch_size = 10    # input batch size for testing (default: 1000)
+config.epochs = 50             # number of epochs to train (default: 10)
+config.learning_rate = 0.1               # learning rate (default: 0.01)
+config.momentum = 0.1          # SGD momentum (default: 0.5) 
+config.no_cuda = False         # disables CUDA training
+config.seed = 42               # random seed (default: 42)
+config.log_interval = 10     # how many batches to wait before logging training status
+config.step_size = 7
+config.gamma = .1
 
-
-print(tf.test.is_gpu_available(cuda_only=False,min_cuda_compute_capability=None))
-
+use_cuda = not config.no_cuda and torch.cuda.is_available()
+device = torch.device("cuda" if use_cuda else "cpu")
 mean = np.array([0.5, 0.5, 0.5])
 std = np.array([0.25, 0.25, 0.25])
 
-#label_names={'ants', 'bees'}
-label_names={'airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'}
+label_names={'ants', 'bees'}
+#label_names={'airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'}
 
 data_transforms = {
     'train': transforms.Compose([
@@ -53,7 +57,7 @@ data_transforms = {
     ])
 }
 
-data_dir = 'CIFAR10'
+data_dir = 'hymenoptera_data'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'test']}
@@ -66,34 +70,13 @@ dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'test']}
 class_names = image_datasets['train'].classes
 print(class_names)
 
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
-def imshow(inp, title):
-    """Imshow for Tensor."""
-    inp = inp.numpy().transpose((1, 2, 0))
-    inp = std * inp + mean
-    inp = np.clip(inp, 0, 1)
-    plt.imshow(inp)
-    plt.title(title)
-    plt.show()
-
-
-# Get a batch of training data
-inputs, classes = next(iter(dataloaders['train']))
-
-# Make a grid from batch
-out = torchvision.utils.make_grid(inputs)
-
-#imshow(out, title=[class_names[x] for x in classes])
-
-
-def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs):
+def train_model(args, model, criterion, optimizer, scheduler, epochs):
     since = time.time()
     best_model_wts = copy.deepcopy(model.state_dict())
     best_acc = 0.0
 
-    for epoch in range(num_epochs):
-        print(f'Epoch {epoch}/{num_epochs-1}')
+    for epoch in range(epochs):
+        print(f'Epoch {epoch}/{epochs-1}')
         print('-' * 10)
 
         for phase in ['train', 'test']:
@@ -153,46 +136,24 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=config.epochs
         time_elapsed // 60, time_elapsed % 60))
     print('Best val Acc: {:4f}'.format(best_acc))
 
-    # load best model weights
-    model.load_state_dict(best_model_wts)
-    return model
 
 
 
+def main():
+    
+    kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
 
-
-"""
-model_conv = torchvision.models.resnet34(pretrained=False)
-for param in model_conv.parameters():
-    param.requires_grad = False
-
-# Parameters of newly constructed modules have requires_grad=True by default
-num_ftrs = model_conv.fc.in_features
-model_conv.fc = nn.Linear(num_ftrs, 10)
-
-model_conv = model_conv.to(device)
-wandb.watch(model_conv)
-
-criterion = nn.CrossEntropyLoss()
-
-# Observe that only parameters of final layer are being optimized as
-# opposed to before.
-
-optimizer_conv = optim.SGD(model_conv.fc.parameters(), lr=config.learning_rate, momentum=config.momentum)
-
-# Decay LR by a factor of 0.1 every 7 epochs
-exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=config.step_size, gamma=config.gamma)
-
-model_conv = train_model(model_conv, criterion, optimizer_conv,
-                         exp_lr_scheduler, num_epochs=config.epochs)
+    # Set random seeds and deterministic pytorch for reproducibility
+    # random.seed(config.seed)       # python random seed
+    torch.manual_seed(config.seed) # pytorch random seed
+    # numpy.random.seed(config.seed) # numpy random seed
+    torch.backends.cudnn.deterministic = True
+    bs=config.batch_size
+    print(bs)
 
 
 
-"""
-########## TRYING CONVNEXT ##########
-from timm.models import create_model
-import convnext
-model = create_model(
+    model = create_model(
         'convnext_tiny', 
         pretrained=False, 
         num_classes=1000, 
@@ -203,20 +164,21 @@ model = create_model(
 #### ConvNet as fixed feature extractor ####
 # Here, we need to freeze all the network except the final layer.
 # We need to set requires_grad == False to freeze the parameters so that the gradients are not computed in backward()
-model.head = nn.Linear(in_features=model.head.in_features,out_features=10,bias=True)
-model = model.to(device)
-print(model)
-wandb.watch(model)
-criterion = nn.CrossEntropyLoss()
+    model.head = nn.Linear(in_features=model.head.in_features,out_features=2,bias=True)
+    model = model.to(device)
+    criterion = nn.CrossEntropyLoss()
 
 # Observe that only parameters of final layer are being optimized as
 # opposed to before.
 
-optimizer_conv = optim.SGD(model.parameters(), lr=config.learning_rate, momentum=config.momentum)
-
+    optimizer_conv = optim.SGD(model.parameters(), lr=config.learning_rate, momentum=config.momentum)
+    wandb.watch(model)
 # Decay LR by a factor of 0.1 every 7 epochs
-exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=config.step_size, gamma=config.gamma)
+    exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=config.step_size, gamma=config.gamma)
 
-model_conv = train_model(model, criterion, optimizer_conv,
-                         exp_lr_scheduler, num_epochs=config.epochs)
+    train_model(config, model, criterion, optimizer_conv,
+                         exp_lr_scheduler, epochs=config.epochs)
 
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,3 @@
+
+wandb: WARNING Config item 'batch_size' was locked by 'sweep' (ignored update).
+['ants', 'bees']

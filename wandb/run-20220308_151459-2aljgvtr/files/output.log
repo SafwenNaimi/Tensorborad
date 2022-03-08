@@ -1,0 +1,12 @@
+
+['ants', 'bees']
+Traceback (most recent call last):
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 182, in <module>
+    main()
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 175, in main
+    exp_lr_scheduler = lr_scheduler.StepLR(optimizer_conv, step_size=config.step_size, gamma=config.gamma)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\wandb\sdk\wandb_config.py", line 154, in __getattr__
+    return self.__getitem__(key)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\wandb\sdk\wandb_config.py", line 122, in __getitem__
+    return self._items[key]
+KeyError: 'gamma'

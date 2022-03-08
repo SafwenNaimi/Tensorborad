@@ -1,0 +1,7 @@
+['ants', 'bees']
+4
+Epoch 0/49
+----------
+train: Loss: 9.8010 Acc: 0.5246
+test: Loss: 4.6063 Acc: 0.5882
+Epoch 1/49

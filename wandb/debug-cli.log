@@ -1,0 +1,206 @@
+2022-03-08 13:12:27 ERROR Traceback (most recent call last):
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\apis\normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 562, in sweep
+    raise ValueError("Sweep {}/{}/{} not found".format(entity, project, sweep))
+ValueError: Sweep safwennaimi/param-sweep/b6vqjekz not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\cli\cli.py", line 86, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\cli\cli.py", line 1185, in agent
+    wandb_agent.agent(sweep_id, entity=entity, project=project, count=count)
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\wandb_agent.py", line 578, in agent
+    return run_agent(
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\wandb_agent.py", line 520, in run_agent
+    agent.run()
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\wandb_agent.py", line 181, in run
+    sweep_obj = self._api.sweep(self._sweep_id, "{}")
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\apis\internal.py", line 96, in sweep
+    return self.api.sweep(*args, **kwargs)
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\apis\normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "c:\users\safwen\anaconda3\lib\site-packages\six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\apis\normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\safwen\anaconda3\lib\site-packages\wandb\sdk\internal\internal_api.py", line 562, in sweep
+    raise ValueError("Sweep {}/{}/{} not found".format(entity, project, sweep))
+wandb.errors.CommError: Sweep safwennaimi/param-sweep/b6vqjekz not found
+
+2022-03-08 13:13:51 INFO Running runs: []
+2022-03-08 13:13:52 INFO Agent received command: run
+2022-03-08 13:13:52 INFO Agent starting run with config:
+	batch_size: 6
+	epochs: 25
+	learning_rate: 0.003466261512024721
+	pretrained: false
+2022-03-08 13:13:52 INFO About to run command: python main.py --batch_size=6 --epochs=25 --learning_rate=0.003466261512024721 --pretrained=false
+2022-03-08 13:13:57 INFO Running runs: ['q6xvp1a3']
+2022-03-08 13:17:39 INFO Cleaning up finished run: q6xvp1a3
+2022-03-08 13:17:40 INFO Agent received command: run
+2022-03-08 13:17:40 INFO Agent starting run with config:
+	batch_size: 16
+	epochs: 21
+	learning_rate: 0.0007173890448873726
+	pretrained: true
+2022-03-08 13:17:40 INFO About to run command: python main.py --batch_size=16 --epochs=21 --learning_rate=0.0007173890448873726 --pretrained=true
+2022-03-08 13:17:45 INFO Running runs: ['93qi5dfa']
+2022-03-08 13:19:42 INFO Cleaning up finished run: 93qi5dfa
+2022-03-08 13:19:42 INFO Agent received command: run
+2022-03-08 13:19:42 INFO Agent starting run with config:
+	batch_size: 10
+	epochs: 42
+	learning_rate: 0.0045343920980409815
+	pretrained: true
+2022-03-08 13:19:42 INFO About to run command: python main.py --batch_size=10 --epochs=42 --learning_rate=0.0045343920980409815 --pretrained=true
+2022-03-08 13:19:47 INFO Running runs: ['3wn1x3bu']
+2022-03-08 13:23:50 INFO Cleaning up finished run: 3wn1x3bu
+2022-03-08 13:23:50 INFO Agent received command: run
+2022-03-08 13:23:50 INFO Agent starting run with config:
+	batch_size: 8
+	epochs: 39
+	learning_rate: 0.002722093550517569
+	pretrained: false
+2022-03-08 13:23:50 INFO About to run command: python main.py --batch_size=8 --epochs=39 --learning_rate=0.002722093550517569 --pretrained=false
+2022-03-08 13:23:56 INFO Running runs: ['reo5prhy']
+2022-03-08 13:27:59 INFO Cleaning up finished run: reo5prhy
+2022-03-08 13:28:01 INFO Agent received command: run
+2022-03-08 13:28:01 INFO Agent starting run with config:
+	batch_size: 12
+	epochs: 40
+	learning_rate: 0.004673728586768324
+	pretrained: true
+2022-03-08 13:28:01 INFO About to run command: python main.py --batch_size=12 --epochs=40 --learning_rate=0.004673728586768324 --pretrained=true
+2022-03-08 13:28:06 INFO Running runs: ['h27cljki']
+2022-03-08 13:31:25 INFO Cleaning up finished run: h27cljki
+2022-03-08 13:31:26 INFO Agent received command: run
+2022-03-08 13:31:26 INFO Agent starting run with config:
+	batch_size: 14
+	epochs: 36
+	learning_rate: 0.004082705044330282
+	pretrained: true
+2022-03-08 13:31:26 INFO About to run command: python main.py --batch_size=14 --epochs=36 --learning_rate=0.004082705044330282 --pretrained=true
+2022-03-08 13:31:31 INFO Running runs: ['f0s5uohf']
+2022-03-08 13:34:40 INFO Cleaning up finished run: f0s5uohf
+2022-03-08 13:34:41 INFO Agent received command: run
+2022-03-08 13:34:41 INFO Agent starting run with config:
+	batch_size: 13
+	epochs: 45
+	learning_rate: 0.004596219542124984
+	pretrained: false
+2022-03-08 13:34:41 INFO About to run command: python main.py --batch_size=13 --epochs=45 --learning_rate=0.004596219542124984 --pretrained=false
+2022-03-08 13:34:46 INFO Running runs: ['18pgewzl']
+2022-03-08 13:38:19 INFO Cleaning up finished run: 18pgewzl
+2022-03-08 13:38:19 INFO Agent received command: run
+2022-03-08 13:38:19 INFO Agent starting run with config:
+	batch_size: 14
+	epochs: 43
+	learning_rate: 0.004207644175545508
+	pretrained: true
+2022-03-08 13:38:19 INFO About to run command: python main.py --batch_size=14 --epochs=43 --learning_rate=0.004207644175545508 --pretrained=true
+2022-03-08 13:38:24 INFO Running runs: ['0pqgtf7b']
+2022-03-08 13:42:11 INFO Cleaning up finished run: 0pqgtf7b
+2022-03-08 13:42:14 INFO Agent received command: run
+2022-03-08 13:42:14 INFO Agent starting run with config:
+	batch_size: 13
+	epochs: 33
+	learning_rate: 0.0011094651269984844
+	pretrained: true
+2022-03-08 13:42:14 INFO About to run command: python main.py --batch_size=13 --epochs=33 --learning_rate=0.0011094651269984844 --pretrained=true
+2022-03-08 13:42:19 INFO Running runs: ['m9c7q6yb']
+2022-03-08 13:45:36 INFO Cleaning up finished run: m9c7q6yb
+2022-03-08 13:45:37 INFO Agent received command: run
+2022-03-08 13:45:37 INFO Agent starting run with config:
+	batch_size: 13
+	epochs: 40
+	learning_rate: 0.0024631818099736347
+	pretrained: false
+2022-03-08 13:45:37 INFO About to run command: python main.py --batch_size=13 --epochs=40 --learning_rate=0.0024631818099736347 --pretrained=false
+2022-03-08 13:45:42 INFO Running runs: ['xwpz62rh']
+2022-03-08 13:48:42 INFO Cleaning up finished run: xwpz62rh
+2022-03-08 13:48:42 INFO Agent received command: run
+2022-03-08 13:48:42 INFO Agent starting run with config:
+	batch_size: 15
+	epochs: 22
+	learning_rate: 0.003242982486359264
+	pretrained: false
+2022-03-08 13:48:42 INFO About to run command: python main.py --batch_size=15 --epochs=22 --learning_rate=0.003242982486359264 --pretrained=false
+2022-03-08 13:48:52 INFO Running runs: ['qy8scams']
+2022-03-08 13:54:03 INFO Running runs: []
+2022-03-08 13:54:05 INFO Agent received command: run
+2022-03-08 13:54:05 INFO Agent starting run with config:
+	batch_size: 6
+	epochs: 13
+	learning_rate: 0.006592837102859075
+	pretrained: false
+2022-03-08 13:54:05 INFO About to run command: python main.py --batch_size=6 --epochs=13 --learning_rate=0.006592837102859075 --pretrained=false
+2022-03-08 13:54:10 INFO Running runs: ['82iixto8']
+2022-03-08 13:58:41 INFO Cleaning up finished run: 82iixto8
+2022-03-08 13:58:41 INFO Agent received command: run
+2022-03-08 13:58:41 INFO Agent starting run with config:
+	batch_size: 4
+	epochs: 17
+	learning_rate: 0.0062307368974970885
+	pretrained: true
+2022-03-08 13:58:41 INFO About to run command: python main.py --batch_size=4 --epochs=17 --learning_rate=0.0062307368974970885 --pretrained=true
+2022-03-08 13:58:46 INFO Running runs: ['wrsjibzh']
+2022-03-08 14:04:52 INFO Cleaning up finished run: wrsjibzh
+2022-03-08 14:04:53 INFO Agent received command: run
+2022-03-08 14:04:53 INFO Agent starting run with config:
+	batch_size: 6
+	epochs: 18
+	learning_rate: 0.005550523161174822
+	pretrained: false
+2022-03-08 14:04:53 INFO About to run command: python main.py --batch_size=6 --epochs=18 --learning_rate=0.005550523161174822 --pretrained=false
+2022-03-08 14:04:58 INFO Running runs: ['m27yuozg']
+2022-03-08 14:11:04 INFO Cleaning up finished run: m27yuozg
+2022-03-08 14:11:05 INFO Agent received command: run
+2022-03-08 14:11:05 INFO Agent starting run with config:
+	batch_size: 15
+	epochs: 11
+	learning_rate: 0.002699547659210473
+	pretrained: false
+2022-03-08 14:11:05 INFO About to run command: python main.py --batch_size=15 --epochs=11 --learning_rate=0.002699547659210473 --pretrained=false
+2022-03-08 14:11:10 INFO Running runs: ['yh4igvgk']
+2022-03-08 14:14:51 INFO Cleaning up finished run: yh4igvgk
+2022-03-08 14:14:51 INFO Agent received command: run
+2022-03-08 14:14:51 INFO Agent starting run with config:
+	batch_size: 8
+	epochs: 17
+	learning_rate: 0.006360773919245298
+	pretrained: true
+2022-03-08 14:14:51 INFO About to run command: python main.py --batch_size=8 --epochs=17 --learning_rate=0.006360773919245298 --pretrained=true
+2022-03-08 14:14:56 INFO Running runs: ['4u2nhhd8']
+2022-03-08 14:20:31 INFO Cleaning up finished run: 4u2nhhd8
+2022-03-08 14:20:32 INFO Agent received command: run
+2022-03-08 14:20:32 INFO Agent starting run with config:
+	batch_size: 13
+	epochs: 12
+	learning_rate: 0.005376502219516728
+	pretrained: false
+2022-03-08 14:20:32 INFO About to run command: python main.py --batch_size=13 --epochs=12 --learning_rate=0.005376502219516728 --pretrained=false
+2022-03-08 14:20:37 INFO Running runs: ['yznofkzx']
+2022-03-08 14:24:34 INFO Cleaning up finished run: yznofkzx
+2022-03-08 14:24:35 INFO Agent received command: run
+2022-03-08 14:24:35 INFO Agent starting run with config:
+	batch_size: 14
+	epochs: 14
+	learning_rate: 0.007596503968048635
+	pretrained: true
+2022-03-08 14:24:35 INFO About to run command: python main.py --batch_size=14 --epochs=14 --learning_rate=0.007596503968048635 --pretrained=true
+2022-03-08 14:24:40 INFO Running runs: ['yrl5ey54']
+2022-03-08 15:36:41 INFO Running runs: []
+2022-03-08 15:36:41 INFO Agent received command: run
+2022-03-08 15:36:41 INFO Agent starting run with config:
+	batch_size: 13
+2022-03-08 15:36:41 INFO About to run command: python main_0.py --batch_size=13
+2022-03-08 15:36:46 INFO Running runs: ['g5cwld1j']
+2022-03-08 15:39:18 INFO Cleaning up finished run: g5cwld1j
+2022-03-08 15:39:18 INFO Agent received command: run
+2022-03-08 15:39:18 INFO Agent starting run with config:
+	batch_size: 8
+2022-03-08 15:39:18 INFO About to run command: python main_0.py --batch_size=8
+2022-03-08 15:39:23 INFO Running runs: ['md9mz72k']

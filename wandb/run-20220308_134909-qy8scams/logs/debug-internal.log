@@ -1,0 +1,111 @@
+2022-03-08 13:49:12,590 INFO    MainThread:21328 [internal.py:wandb_internal():89] W&B internal server running at pid: 21328, started at: 2022-03-08 13:49:12.590219
+2022-03-08 13:49:12,593 INFO    WriterThread:21328 [datastore.py:open_for_write():77] open: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\run-qy8scams.wandb
+2022-03-08 13:49:12,593 DEBUG   HandlerThread:21328 [handler.py:handle_request():131] handle_request: check_version
+2022-03-08 13:49:12,602 DEBUG   SenderThread:21328 [sender.py:send():235] send: header
+2022-03-08 13:49:12,602 DEBUG   SenderThread:21328 [sender.py:send_request():249] send_request: check_version
+2022-03-08 13:49:12,954 DEBUG   SenderThread:21328 [sender.py:send():235] send: run
+2022-03-08 13:49:13,309 INFO    SenderThread:21328 [dir_watcher.py:__init__():169] watching files in: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files
+2022-03-08 13:49:13,309 INFO    SenderThread:21328 [sender.py:_start_run_threads():809] run started: qy8scams with start time 1646743750
+2022-03-08 13:49:13,309 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:13,310 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:13,311 DEBUG   HandlerThread:21328 [handler.py:handle_request():131] handle_request: run_start
+2022-03-08 13:49:14,321 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:49:16,130 DEBUG   HandlerThread:21328 [meta.py:__init__():36] meta init
+2022-03-08 13:49:16,130 DEBUG   HandlerThread:21328 [meta.py:__init__():50] meta init done
+2022-03-08 13:49:16,130 DEBUG   HandlerThread:21328 [meta.py:probe():210] probe
+2022-03-08 13:49:16,205 DEBUG   HandlerThread:21328 [meta.py:_setup_git():200] setup git
+2022-03-08 13:49:16,326 DEBUG   HandlerThread:21328 [meta.py:_setup_git():207] setup git done
+2022-03-08 13:49:16,326 DEBUG   HandlerThread:21328 [meta.py:_save_pip():54] save pip
+2022-03-08 13:49:16,327 DEBUG   HandlerThread:21328 [meta.py:_save_pip():68] save pip done
+2022-03-08 13:49:16,327 DEBUG   HandlerThread:21328 [meta.py:_save_conda():75] save conda
+2022-03-08 13:49:16,384 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\requirements.txt
+2022-03-08 13:49:16,384 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\conda-environment.yaml
+2022-03-08 13:49:18,410 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:20,441 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:26,563 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:32,598 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:34,618 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:36,640 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:38,653 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:40,670 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:41,376 DEBUG   HandlerThread:21328 [meta.py:_save_conda():85] save conda done
+2022-03-08 13:49:41,376 DEBUG   HandlerThread:21328 [meta.py:probe():248] probe done
+2022-03-08 13:49:41,544 DEBUG   HandlerThread:21328 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 13:49:41,544 DEBUG   SenderThread:21328 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 13:49:41,553 DEBUG   HandlerThread:21328 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 13:49:41,674 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-metadata.json
+2022-03-08 13:49:41,886 DEBUG   SenderThread:21328 [sender.py:send():235] send: files
+2022-03-08 13:49:41,886 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-03-08 13:49:41,891 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:49:41,891 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:41,892 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:41,892 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:49:41,892 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:41,893 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:41,894 DEBUG   SenderThread:21328 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 13:49:42,310 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:49:42,310 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:42,311 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:42,675 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:42,675 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:49:42,933 INFO    Thread-17 :21328 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\AppData\Local\Temp\tmpslp5mrzlwandb\30pnbgd3-wandb-metadata.json
+2022-03-08 13:49:43,047 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:49:43,048 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:43,049 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:43,680 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:49:44,696 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:46,617 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:49:46,617 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:46,618 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:46,720 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:46,720 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:49:47,227 DEBUG   SenderThread:21328 [sender.py:send():235] send: stats
+2022-03-08 13:49:48,722 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:50,473 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:49:50,474 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:50,475 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:50,740 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:50,740 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:49:54,171 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:49:54,171 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:54,173 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:54,769 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:49:54,769 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:49:57,320 DEBUG   HandlerThread:21328 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 13:49:57,321 DEBUG   SenderThread:21328 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 13:49:57,608 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:49:57,609 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:49:57,610 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:49:57,799 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:49:58,801 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:50:00,821 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:50:01,129 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:50:01,130 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:50:01,131 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:50:01,836 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:50:02,851 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:50:04,661 DEBUG   SenderThread:21328 [sender.py:send():235] send: history
+2022-03-08 13:50:04,661 DEBUG   SenderThread:21328 [sender.py:send():235] send: summary
+2022-03-08 13:50:04,662 INFO    SenderThread:21328 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 13:50:04,881 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:50:04,881 INFO    Thread-12 :21328 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:50:10,115 WARNING MainThread:21328 [internal.py:is_dead():380] Internal process exiting, parent pid 696 disappeared
+2022-03-08 13:50:10,116 ERROR   MainThread:21328 [internal.py:wandb_internal():148] Internal process shutdown.
+2022-03-08 13:50:10,772 INFO    SenderThread:21328 [sender.py:finish():1075] shutting down sender
+2022-03-08 13:50:10,772 INFO    WriterThread:21328 [datastore.py:close():281] close: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\run-qy8scams.wandb
+2022-03-08 13:50:10,772 INFO    HandlerThread:21328 [handler.py:finish():739] shutting down handler
+2022-03-08 13:50:10,772 INFO    SenderThread:21328 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-08 13:50:10,930 INFO    SenderThread:21328 [dir_watcher.py:finish():313] scan: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files
+2022-03-08 13:50:10,930 INFO    SenderThread:21328 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\conda-environment.yaml conda-environment.yaml
+2022-03-08 13:50:10,930 INFO    SenderThread:21328 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\config.yaml config.yaml
+2022-03-08 13:50:10,931 INFO    SenderThread:21328 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log output.log
+2022-03-08 13:50:10,932 INFO    SenderThread:21328 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\requirements.txt requirements.txt
+2022-03-08 13:50:10,935 INFO    SenderThread:21328 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-metadata.json wandb-metadata.json
+2022-03-08 13:50:10,935 INFO    SenderThread:21328 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json wandb-summary.json
+2022-03-08 13:50:10,943 INFO    SenderThread:21328 [file_pusher.py:finish():177] shutting down file pusher
+2022-03-08 13:50:10,944 INFO    SenderThread:21328 [file_pusher.py:join():182] waiting for file pusher
+2022-03-08 13:50:11,969 INFO    Thread-19 :21328 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\output.log
+2022-03-08 13:50:11,969 INFO    Thread-20 :21328 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\requirements.txt
+2022-03-08 13:50:11,988 INFO    Thread-18 :21328 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\config.yaml
+2022-03-08 13:50:12,061 INFO    Thread-21 :21328 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_134909-qy8scams\files\wandb-summary.json
+2022-03-08 13:50:12,895 INFO    MainThread:21328 [internal.py:handle_exit():79] Internal process exited

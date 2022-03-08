@@ -1,0 +1,11 @@
+2022-03-08 14:31:38,571 INFO    MainThread:19820 [internal.py:wandb_internal():89] W&B internal server running at pid: 19820, started at: 2022-03-08 14:31:38.571958
+2022-03-08 14:31:38,573 INFO    WriterThread:19820 [datastore.py:open_for_write():77] open: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\run-2atun6hb.wandb
+2022-03-08 14:31:38,574 DEBUG   HandlerThread:19820 [handler.py:handle_request():131] handle_request: check_version
+2022-03-08 14:31:38,583 DEBUG   SenderThread:19820 [sender.py:send():235] send: header
+2022-03-08 14:31:38,583 DEBUG   SenderThread:19820 [sender.py:send_request():249] send_request: check_version
+2022-03-08 14:31:38,914 DEBUG   SenderThread:19820 [sender.py:send():235] send: run
+2022-03-08 14:31:39,271 INFO    SenderThread:19820 [dir_watcher.py:__init__():169] watching files in: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_143136-2atun6hb\files
+2022-03-08 14:31:39,272 INFO    SenderThread:19820 [sender.py:_start_run_threads():809] run started: 2atun6hb with start time 1646746296
+2022-03-08 14:31:39,272 DEBUG   SenderThread:19820 [sender.py:send():235] send: summary
+2022-03-08 14:31:39,272 INFO    SenderThread:19820 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:31:39,273 DEBUG   HandlerThread:19820 [handler.py:handle_request():131] handle_request: run_start

@@ -1,0 +1,28 @@
+['ants', 'bees']
+4
+Epoch 0/49
+----------
+Traceback (most recent call last):
+  File "main_0.py", line 184, in <module>
+    main()
+  File "main_0.py", line 179, in main
+    train_model(config, model, criterion, optimizer_conv,
+  File "main_0.py", line 96, in train_model
+    outputs = model(inputs)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\Safwen\Desktop\Tensorborad\convnext.py", line 115, in forward
+    x = self.forward_features(x)
+  File "C:\Users\Safwen\Desktop\Tensorborad\convnext.py", line 110, in forward_features
+    x = self.downsample_layers[i](x)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\nn\modules\container.py", line 119, in forward
+    input = module(input)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\nn\modules\conv.py", line 399, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\nn\modules\conv.py", line 395, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

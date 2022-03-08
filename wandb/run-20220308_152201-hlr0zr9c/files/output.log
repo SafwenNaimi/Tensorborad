@@ -1,0 +1,62 @@
+
+['ants', 'bees']
+Epoch 0/49
+----------
+train: Loss: 9.8010 Acc: 0.5246
+test: Loss: 4.6063 Acc: 0.5882
+Epoch 1/49
+----------
+train: Loss: 2.1747 Acc: 0.5328
+test: Loss: 2.1290 Acc: 0.4641
+Epoch 2/49
+----------
+train: Loss: 1.1706 Acc: 0.5164
+test: Loss: 1.0363 Acc: 0.5425
+Epoch 3/49
+----------
+train: Loss: 1.1069 Acc: 0.5164
+test: Loss: 1.1475 Acc: 0.5294
+Epoch 4/49
+----------
+train: Loss: 0.9221 Acc: 0.5533
+test: Loss: 0.9694 Acc: 0.5033
+Epoch 5/49
+----------
+train: Loss: 0.8285 Acc: 0.5369
+test: Loss: 0.7983 Acc: 0.5752
+Epoch 6/49
+----------
+train: Loss: 0.8272 Acc: 0.5615
+test: Loss: 0.8003 Acc: 0.4379
+Epoch 7/49
+----------
+train: Loss: 0.7025 Acc: 0.5164
+test: Loss: 0.7342 Acc: 0.4706
+Epoch 8/49
+----------
+train: Loss: 0.6452 Acc: 0.5779
+test: Loss: 0.7366 Acc: 0.5490
+Epoch 9/49
+----------
+train: Loss: 0.6614 Acc: 0.6148
+test: Loss: 0.7263 Acc: 0.5425
+Epoch 10/49
+----------
+Traceback (most recent call last):
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 183, in <module>
+    main()
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 178, in main
+    train_model(config, model, criterion, optimizer_conv,
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 104, in train_model
+    optimizer.step()
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\optim\lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\optim\optimizer.py", line 89, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\autograd\grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\optim\sgd.py", line 110, in step
+    F.sgd(params_with_grad,
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\torch\optim\_functional.py", line 169, in sgd
+    buf.mul_(momentum).add_(d_p, alpha=1 - dampening)
+KeyboardInterrupt

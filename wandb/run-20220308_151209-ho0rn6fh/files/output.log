@@ -1,0 +1,12 @@
+
+['ants', 'bees']
+Traceback (most recent call last):
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 181, in <module>
+    main()
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 171, in main
+    optimizer_conv = optim.SGD(model.parameters(), lr=config.learning_rate, momentum=config.momentum)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\wandb\sdk\wandb_config.py", line 154, in __getattr__
+    return self.__getitem__(key)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\wandb\sdk\wandb_config.py", line 122, in __getitem__
+    return self._items[key]
+KeyError: 'learning_rate'

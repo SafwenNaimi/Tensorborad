@@ -1,0 +1,100 @@
+['ants', 'bees']
+13
+wandb: WARNING Config item 'batch_size' was locked by 'sweep' (ignored update).
+Epoch 0/49
+----------
+train: Loss: 11.0634 Acc: 0.4344
+test: Loss: 18.5257 Acc: 0.5621
+Epoch 1/49
+----------
+train: Loss: 7.0532 Acc: 0.4795
+test: Loss: 1.1069 Acc: 0.4771
+Epoch 2/49
+----------
+train: Loss: 1.2148 Acc: 0.4508
+test: Loss: 1.4082 Acc: 0.5033
+Epoch 3/49
+----------
+train: Loss: 0.9912 Acc: 0.4836
+test: Loss: 1.0423 Acc: 0.4575
+Epoch 4/49
+----------
+train: Loss: 1.0809 Acc: 0.4959
+test: Loss: 1.6262 Acc: 0.4706
+Epoch 5/49
+----------
+train: Loss: 0.9925 Acc: 0.5369
+test: Loss: 0.9029 Acc: 0.5294
+Epoch 6/49
+----------
+train: Loss: 0.8545 Acc: 0.5369
+test: Loss: 1.0122 Acc: 0.4902
+Epoch 7/49
+----------
+train: Loss: 0.8615 Acc: 0.4221
+test: Loss: 0.7922 Acc: 0.5098
+Epoch 8/49
+----------
+train: Loss: 0.7043 Acc: 0.5246
+test: Loss: 0.7581 Acc: 0.5033
+Epoch 9/49
+----------
+train: Loss: 0.6912 Acc: 0.5328
+test: Loss: 0.7718 Acc: 0.4837
+Epoch 10/49
+----------
+train: Loss: 0.6987 Acc: 0.5287
+test: Loss: 0.7551 Acc: 0.4706
+Epoch 11/49
+----------
+train: Loss: 0.6770 Acc: 0.5738
+test: Loss: 0.7649 Acc: 0.5033
+Epoch 12/49
+----------
+train: Loss: 0.6649 Acc: 0.5820
+test: Loss: 0.7819 Acc: 0.5229
+Epoch 13/49
+----------
+train: Loss: 0.7083 Acc: 0.5451
+test: Loss: 0.7380 Acc: 0.5359
+Epoch 14/49
+----------
+train: Loss: 0.6738 Acc: 0.5820
+test: Loss: 0.7384 Acc: 0.5229
+Epoch 15/49
+----------
+train: Loss: 0.6829 Acc: 0.5615
+test: Loss: 0.7413 Acc: 0.5359
+Epoch 16/49
+----------
+train: Loss: 0.6654 Acc: 0.5861
+test: Loss: 0.7392 Acc: 0.5163
+Epoch 17/49
+----------
+train: Loss: 0.6713 Acc: 0.5779
+Traceback (most recent call last):
+  File "main_0.py", line 184, in <module>
+    main()
+  File "main_0.py", line 179, in main
+    train_model(config, model, criterion, optimizer_conv,
+  File "main_0.py", line 91, in train_model
+    for inputs, labels in dataloaders[phase]:
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 517, in __next__
+    data = self._next_data()
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 557, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "c:\users\safwen\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "c:\users\safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 178, in __getitem__
+    sample = self.loader(path)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 215, in default_loader
+    return pil_loader(path)
+  File "c:\users\safwen\anaconda3\lib\site-packages\torchvision\datasets\folder.py", line 197, in pil_loader
+    return img.convert('RGB')
+  File "c:\users\safwen\anaconda3\lib\site-packages\PIL\Image.py", line 902, in convert
+    return self.copy()
+  File "c:\users\safwen\anaconda3\lib\site-packages\PIL\Image.py", line 1107, in copy
+    return self._new(self.im.copy())
+MemoryError

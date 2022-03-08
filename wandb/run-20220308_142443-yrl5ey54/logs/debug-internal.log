@@ -1,0 +1,158 @@
+2022-03-08 14:24:46,611 INFO    MainThread:24508 [internal.py:wandb_internal():89] W&B internal server running at pid: 24508, started at: 2022-03-08 14:24:46.610137
+2022-03-08 14:24:46,614 INFO    WriterThread:24508 [datastore.py:open_for_write():77] open: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\run-yrl5ey54.wandb
+2022-03-08 14:24:46,615 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: check_version
+2022-03-08 14:24:46,624 DEBUG   SenderThread:24508 [sender.py:send():235] send: header
+2022-03-08 14:24:46,624 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: check_version
+2022-03-08 14:24:46,977 DEBUG   SenderThread:24508 [sender.py:send():235] send: run
+2022-03-08 14:24:47,322 INFO    SenderThread:24508 [dir_watcher.py:__init__():169] watching files in: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files
+2022-03-08 14:24:47,322 INFO    SenderThread:24508 [sender.py:_start_run_threads():809] run started: yrl5ey54 with start time 1646745883
+2022-03-08 14:24:47,323 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:24:47,323 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:24:47,324 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: run_start
+2022-03-08 14:24:48,337 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:24:51,053 DEBUG   HandlerThread:24508 [meta.py:__init__():36] meta init
+2022-03-08 14:24:51,053 DEBUG   HandlerThread:24508 [meta.py:__init__():50] meta init done
+2022-03-08 14:24:51,053 DEBUG   HandlerThread:24508 [meta.py:probe():210] probe
+2022-03-08 14:24:51,527 DEBUG   HandlerThread:24508 [meta.py:_setup_git():200] setup git
+2022-03-08 14:24:51,678 DEBUG   HandlerThread:24508 [meta.py:_setup_git():207] setup git done
+2022-03-08 14:24:51,678 DEBUG   HandlerThread:24508 [meta.py:_save_pip():54] save pip
+2022-03-08 14:24:51,679 DEBUG   HandlerThread:24508 [meta.py:_save_pip():68] save pip done
+2022-03-08 14:24:51,680 DEBUG   HandlerThread:24508 [meta.py:_save_conda():75] save conda
+2022-03-08 14:24:52,368 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\conda-environment.yaml
+2022-03-08 14:24:52,369 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\requirements.txt
+2022-03-08 14:24:52,369 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:24:54,392 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:24:55,279 DEBUG   HandlerThread:24508 [meta.py:_save_conda():85] save conda done
+2022-03-08 14:24:55,280 DEBUG   HandlerThread:24508 [meta.py:probe():248] probe done
+2022-03-08 14:24:55,502 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:24:55,502 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:24:55,507 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-metadata.json
+2022-03-08 14:24:56,509 DEBUG   SenderThread:24508 [sender.py:send():235] send: files
+2022-03-08 14:24:56,509 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-03-08 14:24:56,525 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:24:57,912 INFO    Thread-17 :24508 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\AppData\Local\Temp\tmpwr5d3hl7wandb\3t7n5o0d-wandb-metadata.json
+2022-03-08 14:24:58,539 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:25:11,523 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:25:11,524 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:25:12,681 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:25:15,659 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:25:15,659 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:25:15,663 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:25:15,727 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:25:16,742 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:25:23,080 DEBUG   SenderThread:24508 [sender.py:send():235] send: stats
+2022-03-08 14:25:26,821 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:25:26,822 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:25:30,881 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:25:32,803 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:25:32,804 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:25:32,806 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:25:32,900 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:25:34,916 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:25:42,117 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:25:42,117 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:25:47,038 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:25:49,837 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:25:49,838 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:25:49,839 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:25:50,055 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:25:51,057 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:25:56,596 DEBUG   SenderThread:24508 [sender.py:send():235] send: stats
+2022-03-08 14:25:57,410 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:25:57,411 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:26:05,178 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:26:06,827 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:26:06,827 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:26:06,828 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:26:07,196 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:26:09,212 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:26:13,351 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:26:13,352 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:26:21,352 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:26:23,830 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:26:23,831 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:26:23,831 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:26:24,416 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:26:25,432 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:26:28,662 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:26:28,663 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:26:30,163 DEBUG   SenderThread:24508 [sender.py:send():235] send: stats
+2022-03-08 14:26:39,555 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:26:40,826 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:26:40,827 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:26:40,830 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:26:41,570 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:26:43,601 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:26:43,978 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:26:43,979 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:26:55,743 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:26:57,793 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:26:57,794 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:26:57,795 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:26:58,775 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:26:59,287 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:26:59,288 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:26:59,790 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:27:03,668 DEBUG   SenderThread:24508 [sender.py:send():235] send: stats
+2022-03-08 14:27:11,916 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:27:14,787 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:27:14,788 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:27:14,791 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:27:14,956 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:27:15,081 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:27:15,081 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:27:15,961 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:27:29,072 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:27:30,898 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:27:30,899 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:27:31,868 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:27:31,868 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:27:31,870 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:27:32,101 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:27:33,102 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:27:37,129 DEBUG   SenderThread:24508 [sender.py:send():235] send: stats
+2022-03-08 14:27:46,207 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:27:46,207 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:27:47,226 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:27:48,913 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:27:48,913 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:27:48,914 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:27:49,278 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:27:49,279 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:28:01,962 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:28:01,963 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:28:03,415 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:28:06,018 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:28:06,018 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:28:06,019 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:28:06,447 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:28:07,462 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:28:10,602 DEBUG   SenderThread:24508 [sender.py:send():235] send: stats
+2022-03-08 14:28:17,633 DEBUG   HandlerThread:24508 [handler.py:handle_request():131] handle_request: stop_status
+2022-03-08 14:28:17,634 DEBUG   SenderThread:24508 [sender.py:send_request():249] send_request: stop_status
+2022-03-08 14:28:21,586 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:28:22,823 DEBUG   SenderThread:24508 [sender.py:send():235] send: history
+2022-03-08 14:28:22,824 DEBUG   SenderThread:24508 [sender.py:send():235] send: summary
+2022-03-08 14:28:22,825 INFO    SenderThread:24508 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-03-08 14:28:23,603 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:28:23,603 INFO    Thread-12 :24508 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:28:33,390 WARNING MainThread:24508 [internal.py:is_dead():380] Internal process exiting, parent pid 24456 disappeared
+2022-03-08 14:28:33,391 ERROR   MainThread:24508 [internal.py:wandb_internal():148] Internal process shutdown.
+2022-03-08 14:28:33,391 INFO    HandlerThread:24508 [handler.py:finish():739] shutting down handler
+2022-03-08 14:28:34,369 INFO    WriterThread:24508 [datastore.py:close():281] close: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\run-yrl5ey54.wandb
+2022-03-08 14:28:34,386 INFO    SenderThread:24508 [sender.py:finish():1075] shutting down sender
+2022-03-08 14:28:34,386 INFO    SenderThread:24508 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-08 14:28:34,703 INFO    SenderThread:24508 [dir_watcher.py:finish():313] scan: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files
+2022-03-08 14:28:34,703 INFO    SenderThread:24508 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\conda-environment.yaml conda-environment.yaml
+2022-03-08 14:28:34,703 INFO    SenderThread:24508 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\config.yaml config.yaml
+2022-03-08 14:28:34,704 INFO    SenderThread:24508 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log output.log
+2022-03-08 14:28:34,704 INFO    SenderThread:24508 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\requirements.txt requirements.txt
+2022-03-08 14:28:34,711 INFO    SenderThread:24508 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-metadata.json wandb-metadata.json
+2022-03-08 14:28:34,711 INFO    SenderThread:24508 [dir_watcher.py:finish():327] scan save: C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json wandb-summary.json
+2022-03-08 14:28:34,712 INFO    SenderThread:24508 [file_pusher.py:finish():177] shutting down file pusher
+2022-03-08 14:28:34,713 INFO    SenderThread:24508 [file_pusher.py:join():182] waiting for file pusher
+2022-03-08 14:28:35,618 INFO    Thread-21 :24508 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\wandb-summary.json
+2022-03-08 14:28:35,778 INFO    Thread-18 :24508 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\config.yaml
+2022-03-08 14:28:35,790 INFO    Thread-19 :24508 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\output.log
+2022-03-08 14:28:35,793 INFO    Thread-20 :24508 [upload_job.py:push():137] Uploaded file C:\Users\Safwen\Desktop\Tensorborad\wandb\run-20220308_142443-yrl5ey54\files\requirements.txt
+2022-03-08 14:28:36,443 INFO    MainThread:24508 [internal.py:handle_exit():79] Internal process exited

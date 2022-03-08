@@ -1,0 +1,12 @@
+
+['ants', 'bees']
+Traceback (most recent call last):
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 183, in <module>
+    main()
+  File "c:/Users/Safwen/Desktop/Tensorborad/main_0.py", line 179, in main
+    exp_lr_scheduler, num_epochs=config.epochs)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\wandb\sdk\wandb_config.py", line 154, in __getattr__
+    return self.__getitem__(key)
+  File "C:\Users\Safwen\anaconda3\lib\site-packages\wandb\sdk\wandb_config.py", line 122, in __getitem__
+    return self._items[key]
+KeyError: 'epochs'

@@ -1,0 +1,36 @@
+
+['ants', 'bees']
+Epoch 0/49
+----------
+train: Loss: 9.8010 Acc: 0.5246
+test: Loss: 4.6063 Acc: 0.5882
+Epoch 1/49
+----------
+train: Loss: 2.1747 Acc: 0.5328
+test: Loss: 2.1290 Acc: 0.4641
+Epoch 2/49
+----------
+train: Loss: 1.1706 Acc: 0.5164
+test: Loss: 1.0363 Acc: 0.5425
+Epoch 3/49
+----------
+train: Loss: 1.1069 Acc: 0.5164
+test: Loss: 1.1475 Acc: 0.5294
+Epoch 4/49
+----------
+train: Loss: 0.9221 Acc: 0.5533
+test: Loss: 0.9694 Acc: 0.5033
+Epoch 5/49
+----------
+train: Loss: 0.8285 Acc: 0.5369
+test: Loss: 0.7983 Acc: 0.5752
+Epoch 6/49
+----------
+train: Loss: 0.8272 Acc: 0.5615
+test: Loss: 0.8003 Acc: 0.4379
+Epoch 7/49
+----------
+train: Loss: 0.7025 Acc: 0.5164
+test: Loss: 0.7342 Acc: 0.4706
+Epoch 8/49
+----------

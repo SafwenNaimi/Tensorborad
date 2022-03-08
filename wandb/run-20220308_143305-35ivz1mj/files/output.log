@@ -1,0 +1,26 @@
+WARNING:tensorflow:From main.py:32: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+True
+['ants', 'bees']
+{'batch_size': 16, 'learning_rate': 0.0001, 'momentum': 0.5, 'gamma': 0.1, 'step_size': 7, 'epochs': 10, 'pretrained': False}
+Epoch 0/9
+----------
+train: Loss: 0.7401 Acc: 0.5615
+test: Loss: 0.6761 Acc: 0.5621
+Epoch 1/9
+----------
+train: Loss: 0.6816 Acc: 0.5820
+test: Loss: 0.6765 Acc: 0.5556
+Epoch 2/9
+----------
+train: Loss: 0.6774 Acc: 0.5738
+test: Loss: 0.6790 Acc: 0.5490
+Epoch 3/9
+----------
+Traceback (most recent call last):
+  File "main.py", line 219, in <module>
+    model_conv = train_model(model, criterion, optimizer_conv,
+  File "main.py", line 123, in train_model
+    running_loss += loss.item() * inputs.size(0)
+KeyboardInterrupt

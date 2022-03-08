@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.5",
+    "heartbeatAt": "2022-03-08T14:21:13.235614",
+    "startedAt": "2022-03-08T14:21:04.977810",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1050",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:/Users/Safwen/Desktop/Tensorborad/main_0.py",
+    "codePath": "main_0.py",
+    "git": {
+        "remote": "https://github.com/SafwenNaimi/Tensorborad.git",
+        "commit": "828c2278906fa26b6cb0fe7f14bb669330504d95"
+    },
+    "email": "safwen.naimi@gmail.com",
+    "root": "C:/Users/Safwen/Desktop/Tensorborad",
+    "host": "DESKTOP-STAHH2H",
+    "username": "Safwen",
+    "executable": "C:\\Users\\Safwen\\anaconda3\\python.exe"
+}
